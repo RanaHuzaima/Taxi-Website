@@ -62,41 +62,45 @@ const Home = () => {
             Our <span className="text-yellow-400">Fleets</span>
           </span>
         </div>
-        <div className="items-center grid grid-cols-3 gap-4 text-center mb-8 font-semibold lg:text-lg">
-          <div className="flex flex-col items-center ">
-            <img
-              src="https://harmaintransport.com/wp-content/uploads/2020/04/5.png"
-              alt="ticket-icon"
-            />
-            <span>CAMRY 4 Seater CAR</span>
+        <div className="items-center text-center mb-8 font-semibold lg:text-lg">
+          <div className="flex flex-row md:flex-nowrap lg:flex-nowrap flex-wrap">
+            <div className="flex flex-col items-center ">
+              <img
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/5.png"
+                alt="ticket-icon"
+              />
+              <span>CAMRY 4 Seater CAR</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/4.png"
+                alt="hidden-fee-icon"
+              />
+              <span>INNOVA 7 Seater MPV</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/3.png"
+                alt="lowest-rates-icon"
+              />
+              <span>HIACE 10 Seater Van</span>
+            </div>
           </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://harmaintransport.com/wp-content/uploads/2020/04/4.png"
-              alt="hidden-fee-icon"
-            />
-            <span>INNOVA 7 Seater MPV</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://harmaintransport.com/wp-content/uploads/2020/04/3.png"
-              alt="lowest-rates-icon"
-            />
-            <span>HIACE 10 Seater Van</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://harmaintransport.com/wp-content/uploads/2020/04/2.png"
-              alt="pick-up-icon"
-            />
-            <span>GMC 7 Seater SUV</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://harmaintransport.com/wp-content/uploads/2023/07/H1-Hyundain-New.png"
-              alt="pick-up-icon"
-            />
-            <span>H1 HYUNDAI 7 Seater Van</span>
+          <div className="flex flex-row md:flex-nowrap lg:flex-nowrap flex-wrap">
+            <div className="flex flex-col items-center">
+              <img
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/2.png"
+                alt="pick-up-icon"
+              />
+              <span>GMC 7 Seater SUV</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="https://harmaintransport.com/wp-content/uploads/2023/07/H1-Hyundain-New.png"
+                alt="pick-up-icon"
+              />
+              <span>H1 HYUNDAI 7 Seater Van</span>
+            </div>
           </div>
         </div>
       </div>
