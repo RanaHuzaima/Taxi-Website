@@ -56,6 +56,118 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="container mx-auto bg-white">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+          <span>
+            Our <span className="text-yellow-400">Fleets</span>
+          </span>
+        </div>
+        <div className="items-center grid grid-cols-3 gap-4 text-center mb-8 font-semibold lg:text-lg">
+          <div className="flex flex-col items-center ">
+            <img
+              src="https://harmaintransport.com/wp-content/uploads/2020/04/5.png"
+              alt="ticket-icon"
+            />
+            <span>CAMRY 4 Seater CAR</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://harmaintransport.com/wp-content/uploads/2020/04/4.png"
+              alt="hidden-fee-icon"
+            />
+            <span>INNOVA 7 Seater MPV</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://harmaintransport.com/wp-content/uploads/2020/04/3.png"
+              alt="lowest-rates-icon"
+            />
+            <span>HIACE 10 Seater Van</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://harmaintransport.com/wp-content/uploads/2020/04/2.png"
+              alt="pick-up-icon"
+            />
+            <span>GMC 7 Seater SUV</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://harmaintransport.com/wp-content/uploads/2023/07/H1-Hyundain-New.png"
+              alt="pick-up-icon"
+            />
+            <span>H1 HYUNDAI 7 Seater Van</span>
+          </div>
+        </div>
+      </div>
+      <div className="container flex flex-col mx-auto bg-white">
+        <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+          <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
+            <span className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl">
+              Any Group <span className="text-yellow-400">Size,</span> Any
+              <span className="text-yellow-400"> Distance.</span>
+            </span>
+            <p className="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+              Our Umrah Taxi company is first of it’s kind of cab service
+              specializing for in Transport service giving the chance of instant
+              online booking for numerous type of vehicles varying in sizes
+              depending on the number of members in the group. For the best
+              ground transportation experience, let us provide our recognised
+              transport service for your Umrah, family or business trip,
+              parties, airport transfers and corporate travel needs, in Makkah
+              or Madinah.
+            </p>
+          </div>
+          <div className="items-center justify-end hidden col-span-1 md:flex">
+            <img
+              className="rounded-md "
+              src="https://harmainziarah.com/wp-content/uploads/2023/08/HarmainZiarah-Vehicles.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto bg-white">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+          <span>
+            Why <span className="text-yellow-400">Choose</span> Us
+          </span>
+        </div>
+        <div className="flex flex-wrap justify-around text-center mb-8 font-semibold text-lg">
+          <div className="flex flex-col items-center">
+            <img
+              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/plane-ticket.png"
+              alt="ticket-icon"
+              width={70}
+            />
+            <span>Airport Transfer</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/file.png"
+              alt="hidden-fee-icon"
+              width={70}
+            />
+            <span>No Hidden Fee</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/tag.png"
+              alt="lowest-rates-icon"
+              width={70}
+            />
+            <span>Lowest Rates</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/24-hours-1.png"
+              alt="pick-up-icon"
+              width={70}
+            />
+            <span>24/7 Pickup</span>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
