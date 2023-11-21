@@ -17,7 +17,8 @@ const Home = () => {
               </h4>
             </div>
             <h1 className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl">
-              Lets Book Your Umrah Taxi Instantly
+              Lets <span className="text-yellow-400">Book</span> Your Umrah{" "}
+              <span className="text-yellow-400">Taxi</span> Instantly
             </h1>
             <p className="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
               Experience seamless and convenient Umrah pilgrimage with our

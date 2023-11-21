@@ -22,27 +22,25 @@ const Header = () => {
           <div className="items-center justify-between hidden gap-12 text-black md:flex">
             {/* Add your NavLink components here */}
             <NavLink
-              className="font-bold lg:text-2xl text-dark-grey-700 hover:text-dark-grey-900"
+              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
               to="/"
             >
               Home
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-bold text-dark-grey-700 hover:text-dark-grey-900 "
-              exact
-              activeStyle={{ color: "red" }}
+              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
               to="/pricing"
             >
               Pricing
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-bold text-dark-grey-700 hover:text-dark-grey-900"
+              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
               to="/about"
             >
               About
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-bold text-dark-grey-700 hover:text-dark-grey-900"
+              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
               to="/contact"
             >
               Contact Us
