@@ -3,6 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
+      {/* Hero-Section */}
       <div className="container flex flex-col mx-auto bg-white">
         <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
           <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
@@ -56,6 +57,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Fleet-Section */}
       <div className="container mx-auto bg-white">
         <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
           <span>
@@ -104,6 +106,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Size-Section */}
       <div className="container flex flex-col mx-auto bg-white">
         <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
           <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
@@ -131,6 +134,187 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Pick-Section */}
+      <div className="container mx-auto bg-white mb-12">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+          <span>
+            Pick Your <span className="text-yellow-400">Umrah</span> Taxi
+          </span>
+        </div>
+        <div class="flex gap-4 lg:flex-nowrap flex-wrap">
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/5.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <span class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+                  CAMRY 4 Seater CAR
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4  items-center"
+              >
+                Book Now
+                <svg
+                  class="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/4.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <span class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+                  INNOVA 7 Seater MPV
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4 items-center"
+              >
+                Book Now
+                <svg
+                  class="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/3.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <span class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+                  HIACE 10 Seater Van
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4 items-center"
+              >
+                Book Now
+                <svg
+                  class="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="https://harmaintransport.com/wp-content/uploads/2020/04/2.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <span class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+                  GMC 7 2022 Seater SUV
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4 items-center"
+              >
+                Book Now
+                <svg
+                  class="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="https://harmaintransport.com/wp-content/uploads/2023/07/H1-Hyundain-New.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <span class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+                  H1 HYUNDAI 7 Seater Van
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4 items-center"
+              >
+                Book Now
+                <svg
+                  class="-mr-1 ml-2 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Choose-Section */}
       <div className="container mx-auto bg-white">
         <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
           <span>
