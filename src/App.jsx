@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import "./app.css";
 
 const App = () => {
   return (
