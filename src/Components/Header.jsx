@@ -49,7 +49,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="items-center hidden gap-8 md:flex">
-            <button className="flex items-center px-4 py-2 lg:text-2xl font-bold rounded-xl  bg-yellow-400 hover:bg-yellow-600 text-white transition duration-300">
+            <button className="flex items-center px-4 py-2 lg:text-xl font-bold rounded-xl  bg-yellow-400 hover:bg-yellow-600 text-white transition duration-300">
               Contact Us
             </button>
           </div>
