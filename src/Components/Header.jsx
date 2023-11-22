@@ -22,25 +22,41 @@ const Header = () => {
           <div className="items-center justify-between hidden gap-12 text-black md:flex">
             {/* Add your NavLink components here */}
             <NavLink
-              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
               to="/"
             >
               Home
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
               to="/pricing"
             >
               Pricing
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
               to="/about"
             >
               About
             </NavLink>
             <NavLink
-              className="lg:text-2xl font-semibold text-dark-grey-700 hover:text-dark-grey-900"
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
               to="/contact"
             >
               Contact Us
@@ -72,25 +88,41 @@ const Header = () => {
           >
             {/* Add your NavLink components here */}
             <NavLink
-              className="font-bold text-dark-grey-700 hover:text-dark-grey-900 border rounded-lg"
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
               to="/"
             >
               Home
             </NavLink>
             <NavLink
-              className=" font-bold text-dark-grey-700 hover:text-dark-grey-900 border rounded-lg"
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
               to="/pricing"
             >
               Pricing
             </NavLink>
             <NavLink
-              className=" font-bold text-dark-grey-700 hover:text-dark-grey-900 border rounded-lg"
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
               to="/about"
             >
               About
             </NavLink>
             <NavLink
-              className=" font-bold text-dark-grey-700 hover:text-dark-grey-900 border rounded-lg"
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
               to="/contact"
             >
               Contact Us

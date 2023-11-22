@@ -18,7 +18,7 @@ const Home = () => {
               </h4>
             </div>
             <h1 className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl">
-              Lets <span className="text-yellow-400">Book</span> Your Umrah{" "}
+              Lets <span className="text-yellow-400">Book</span> Your Umrah
               <span className="text-yellow-400">Taxi</span> Instantly
             </h1>
             <p className="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
@@ -31,7 +31,7 @@ const Home = () => {
               <button className="flex items-center py-4 text-lg font-bold text-white px-7 bg-yellow-400 hover:bg-yellow-600  transition duration-300 rounded-xl">
                 Book Now
               </button>
-              <button className="flex items-center py-4 text-lg font-medium px-7 text-dark-grey-700 hover:text-dark-grey-900 transition duration-300 rounded-xl border hover:bg-yellow-500">
+              <button className="flex items-center py-4 text-lg font-medium px-7 text-yellow-400 hover:text-white transition duration-300 rounded-xl border hover:bg-yellow-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -374,7 +374,6 @@ const Home = () => {
                   loading="lazy"
                 />
                 <p class="text-gray-600 md:text-xl">
-                  {" "}
                   <span class="font-serif">"</span>Book harmain zirah taxi
                   service for travelling from Medina to Makkah and also from
                   Makkah to Jeddah. Polite and good drivers clean cars and great
@@ -399,7 +398,6 @@ const Home = () => {
               />
               <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
                 <p class="text-gray-600">
-                  {" "}
                   <span class="font-serif">"</span>Thanks to Abu Usman for
                   arranging a great trip from Madinah to Makkah … medina
                   ziyarat, Makkah ziyarat and to the airport with no hassle at
@@ -423,7 +421,6 @@ const Home = () => {
               />
               <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
                 <p class="text-gray-600">
-                  {" "}
                   <span class="font-serif">"</span>Best Service… very easy to
                   book.. very quickly response. Sorted out Ziyaraat in Medina
                   the driver was excellent he knew all the main areas and
@@ -439,6 +436,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Contact Us */}
     </>
   );
 };
