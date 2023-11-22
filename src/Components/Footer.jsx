@@ -6,14 +6,14 @@ const Footer = () => {
     <>
       <div class="container mx-auto">
         <footer class="p-4 bg-white md:px-6 md:py-8 dark:bg-gray-800">
-          <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="md:flex md:justify-between flex text-center md:flex-row flex-col justify-center items-center">
             <a href="#" target="_blank" class="flex items-center mb-4 sm:mb-0">
               <img
                 className="lg:h-20 h-16 cursor-pointer"
                 src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"
               />
             </a>
-            <ul class="flex flex-wrap items-center mb-6 sm:mb-0 gap-2 text-black">
+            <ul class="flex md:flex-row flex-col  items-center mb-6 sm:mb-0 md:gap-4 gap-6 text-black">
               <li>
                 <NavLink
                   className={({ isActive }) =>
@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
           <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span class="block text-sm text-gray-500 text-center dark:text-gray-400">
             © 2023{" "}
             <Link to="/" class="hover:underline cursor-pointer">
               UMRAH TAXI™
