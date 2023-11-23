@@ -1,7 +1,7 @@
 import React from "react";
 
-const HeroSection = ({ value }) => {
-  const { subtitle, title, button, text, img_link } = value;
+const HeroSection = ({ hero_value }) => {
+  const { subtitle, title, button, text, img_link } = hero_value;
   const words = title.split(" ");
   return (
     <>

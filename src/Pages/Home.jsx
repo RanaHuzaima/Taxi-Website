@@ -1,102 +1,28 @@
 import React from "react";
 import HeroSection from "../Components/HeroSection";
+import Fleet from "../Components/Fleet";
+import SimpleSection from "../Components/SimpleSection";
 
 const Home = () => {
-  const info = {
+  const hero_info = {
     subtitle: true,
     button: true,
     title: "Lets Book Your Umrah Taxi Instantly",
     text: "Experience seamless and convenient Umrah pilgrimage with our top-notch Umrah Taxi Service. We offer reliable transportation, experienced drivers, and exceptional customer service to ensure a worry-free journey.",
     img_link: "https://i.ibb.co/jGc4tmQ/taxi-img.jpg",
   };
+  const Simple_info = {
+    title: "Any Group Size, Any Distance.",
+    text: "Our Umrah Taxi company is first of it’s kind of cab service specializing for in Transport service giving the chance of instant online booking for numerous type of vehicles varying in sizes depending on the number of members in the group. For the best ground transportation experience, let us provide our recognised transport service for your Umrah, family or business trip, parties, airport transfers and corporate travel needs, in Makkah or Madinah.",
+  };
   return (
     <>
       {/* Hero-Section */}
-      <HeroSection value={info} />
+      <HeroSection hero_value={hero_info} />
       {/* Fleet-Section */}
-      <div className="container mx-auto bg-white">
-        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
-          <span>
-            Our <span className="text-yellow-400">Fleets</span>
-          </span>
-        </div>
-        <div className="items-center text-center mb-8 font-semibold lg:text-lg">
-          <div className="flex flex-row md:flex-nowrap lg:flex-nowrap flex-wrap">
-            <div className="flex flex-col items-center ">
-              <img
-                src="https://harmaintransport.com/wp-content/uploads/2020/04/5.png"
-                alt="ticket-icon"
-              />
-              <span>CAMRY 4 Seater CAR</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="https://harmaintransport.com/wp-content/uploads/2020/04/4.png"
-                alt="hidden-fee-icon"
-              />
-              <span>INNOVA 7 Seater MPV</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="https://harmaintransport.com/wp-content/uploads/2020/04/3.png"
-                alt="lowest-rates-icon"
-              />
-              <span>HIACE 10 Seater Van</span>
-            </div>
-          </div>
-          <div className="flex flex-row md:flex-nowrap lg:flex-nowrap flex-wrap">
-            <div className="flex flex-col items-center">
-              <img
-                src="https://harmaintransport.com/wp-content/uploads/2020/04/2.png"
-                alt="pick-up-icon"
-              />
-              <span>GMC 7 Seater SUV</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="https://harmaintransport.com/wp-content/uploads/2023/07/H1-Hyundain-New.png"
-                alt="pick-up-icon"
-              />
-              <span>H1 HYUNDAI 7 Seater Van</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src="https://i.ibb.co/7CNgB2D/hyundai-staria-63d1fe79af681-prev-ui-1.png"
-                alt="pick-up-icon"
-              />
-              <span className="mt-1">HYUNDAI Staria 9 Seater Van</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Fleet />
       {/* Size-Section */}
-      <div className="container flex flex-col mx-auto bg-white">
-        <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
-          <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
-            <span className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl">
-              Any Group <span className="text-yellow-400">Size,</span> Any
-              <span className="text-yellow-400"> Distance.</span>
-            </span>
-            <p className="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
-              Our Umrah Taxi company is first of it’s kind of cab service
-              specializing for in Transport service giving the chance of instant
-              online booking for numerous type of vehicles varying in sizes
-              depending on the number of members in the group. For the best
-              ground transportation experience, let us provide our recognised
-              transport service for your Umrah, family or business trip,
-              parties, airport transfers and corporate travel needs, in Makkah
-              or Madinah.
-            </p>
-          </div>
-          <div className="items-center justify-end hidden col-span-1 md:flex">
-            <img
-              className="rounded-md "
-              src="https://harmainziarah.com/wp-content/uploads/2023/08/HarmainZiarah-Vehicles.png"
-              alt="image"
-            />
-          </div>
-        </div>
-      </div>
+      <SimpleSection Simple_value={Simple_info} />
       {/* Pick-Section */}
       <div className="container mx-auto bg-white mb-12">
         <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
@@ -354,7 +280,7 @@ const Home = () => {
         </div>
       </div>
       {/* TESTIMONIALS */}
-      <div class="container mx-auto bg-white mt-10 mb-10">
+      <div className="container mx-auto bg-white mt-10 mb-10">
         <div class="container flex text-center flex-col m-auto px-6 md:px-12 xl:px-6">
           <span class="mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
             Some Our <span className="text-yellow-400">Testimonial</span>
