@@ -3,6 +3,7 @@ import HeroSection from "../Components/HeroSection";
 import Fleet from "../Components/Fleet";
 import SimpleSection from "../Components/SimpleSection";
 import PickSection from "../Components/PickSection";
+import ChooseSection from "../Components/ChooseSection";
 
 const Home = () => {
   const hero_info = {
@@ -27,47 +28,7 @@ const Home = () => {
       {/* Pick-Section */}
       <PickSection />
       {/* Choose-Section */}
-      <div className="container mx-auto bg-white">
-        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
-          <span>
-            Why <span className="text-yellow-400">Choose</span> Us
-          </span>
-        </div>
-        <div className="flex flex-wrap justify-around text-center mb-8 font-semibold text-lg">
-          <div className="flex flex-col items-center">
-            <img
-              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/plane-ticket.png"
-              alt="ticket-icon"
-              width={70}
-            />
-            <span>Airport Transfer</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/file.png"
-              alt="hidden-fee-icon"
-              width={70}
-            />
-            <span>No Hidden Fee</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/tag.png"
-              alt="lowest-rates-icon"
-              width={70}
-            />
-            <span>Lowest Rates</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="https://makkahmadinataxiservices.com/wp-content/uploads/2022/10/24-hours-1.png"
-              alt="pick-up-icon"
-              width={70}
-            />
-            <span>24/7 Pickup</span>
-          </div>
-        </div>
-      </div>
+      <ChooseSection />
       {/* TESTIMONIALS */}
       <div className="container mx-auto bg-white mt-10 mb-10">
         <div class="container flex text-center flex-col m-auto px-6 md:px-12 xl:px-6">
