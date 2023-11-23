@@ -36,7 +36,7 @@ const PickSection = () => {
             Pick Your <span className="text-yellow-400">Umrah</span> Taxi
           </span>
         </div>
-        <div class="flex gap-4 lg:flex-nowrap flex-wrap">
+        <div className="flex gap-4 lg:flex-nowrap flex-wrap">
           {/* Book Card */}
           <BookCard data={cardata} />
         </div>

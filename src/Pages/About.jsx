@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import HeroSection from "../Components/HeroSection";
+import TimelineSection from "../Components/TimelineSection";
+import Team from "../Components/Team";
 
 const About = () => {
   const info = {
@@ -13,7 +15,9 @@ const About = () => {
   return (
     <>
       <Breadcrumbs page="About" link="/about" />
-      <HeroSection value={info} />
+      <HeroSection hero_value={info} />
+      <TimelineSection />
+      <Team />
     </>
   );
 };
