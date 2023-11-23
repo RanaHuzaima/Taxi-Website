@@ -5,13 +5,9 @@ const Footer = () => {
   return (
     <>
       <div className="container mx-auto">
-        <footer className="p-4 bg-white md:px-6 md:py-8 dark:bg-gray-800">
+        <footer className="relative p-4 bg-white md:px-6 md:py-8">
           <div className="md:flex md:justify-between flex text-center md:flex-row flex-col justify-center items-center">
-            <a
-              href="#"
-              target="_blank"
-              className="flex items-center mb-4 sm:mb-0"
-            >
+            <a href="" className="flex items-center mb-4 sm:mb-0">
               <img
                 className="lg:h-20 h-16 cursor-pointer"
                 src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"

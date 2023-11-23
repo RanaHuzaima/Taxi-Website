@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Breadcrumbs from "../Components/Breadcrumbs";
 
 const Pricing = () => {
   return (
-    <div>
-      Pricing
-    </div>
-  )
-}
+    <>
+      <Breadcrumbs page="Pricing" link="/pricing" />
+    </>
+  );
+};
 
-export default Pricing
+export default Pricing;

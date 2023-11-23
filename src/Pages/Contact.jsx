@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Breadcrumbs from "../Components/Breadcrumbs";
 
 const Contact = () => {
   return (
-    <div>
-      contact
-    </div>
-  )
-}
+    <>
+      <Breadcrumbs page="Contact" link="/contact" />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
