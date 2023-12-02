@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import Pricing from "./Pages/Pricing";
+import Book from "./Pages/Book";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
@@ -16,8 +16,8 @@ const App = () => {
         <Route path="/" element={<Home />}>
           Home
         </Route>
-        <Route path="/pricing" element={<Pricing />}>
-          Pricing
+        <Route path="/Book" element={<Book />}>
+          Book
         </Route>
         <Route path="/about" element={<About />}>
           About

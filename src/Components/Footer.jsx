@@ -33,9 +33,9 @@ const Footer = () => {
                       isActive ? "text-yellow-400" : ""
                     }`
                   }
-                  to="/pricing"
+                  to="/Book"
                 >
-                  Pricing
+                  Book
                 </NavLink>
               </li>
               <li>

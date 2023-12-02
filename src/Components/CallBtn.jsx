@@ -3,7 +3,10 @@ import React from "react";
 const CallBtn = () => {
   return (
     <>
-      <button className="flex items-center py-4 text-lg font-medium px-7 text-yellow-400 hover:text-white transition duration-300 rounded-xl border hover:bg-yellow-600">
+      <a
+        href="tel:+923009431601"
+        className="flex items-center py-4 text-lg font-medium px-7 text-yellow-400 hover:text-white transition duration-300 rounded-xl border hover:bg-yellow-600"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -17,7 +20,7 @@ const CallBtn = () => {
           ></path>
         </svg>
         Call Now
-      </button>
+      </a>
     </>
   );
 };

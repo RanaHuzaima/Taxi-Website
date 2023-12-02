@@ -37,9 +37,9 @@ const Header = () => {
                   isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
                 }`
               }
-              to="/pricing"
+              to="/Book"
             >
-              Pricing
+              Book
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -63,7 +63,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="items-center hidden gap-8 md:flex">
-            <Button btnText="Contact Us" />
+            <Button btnText="Contact Us" btnLink="/contact" />
           </div>
           <button onClick={handleButtonClick} className="flex md:hidden">
             <svg
@@ -101,9 +101,9 @@ const Header = () => {
                   isActive ? "text-yellow-400" : ""
                 }`
               }
-              to="/pricing"
+              to="/Book"
             >
-              Pricing
+              Book
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -125,9 +125,7 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
-            <button className="flex items-center px-4 py-2 text-sm font-bold rounded-xl  bg-yellow-400 hover:bg-yellow-600 text-white transition duration-300">
-              Contact Us
-            </button>
+            <Button btnText="Contact Us" btnLink="/contact" />
           </div>
         </div>
       </div>
