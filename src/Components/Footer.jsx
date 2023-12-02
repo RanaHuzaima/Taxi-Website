@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="container mx-auto">
-        <footer className="relative p-4 bg-white md:px-6 md:py-8">
+        <footer className=" bg-white mt-7">
           <div className="md:flex md:justify-between flex text-center md:flex-row flex-col justify-center items-center">
             <a href="" className="flex items-center mb-4 sm:mb-0">
               <img

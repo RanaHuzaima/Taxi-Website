@@ -7,11 +7,13 @@ import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "./app.css";
+import Whatsappicon from "./Components/Whatsappicon";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <Whatsappicon />
       <Routes>
         <Route path="/" element={<Home />}>
           Home

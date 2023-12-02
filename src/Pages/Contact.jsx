@@ -97,7 +97,7 @@ const Contact = () => {
       </div>
       {/* Google Map */}
       <div className="container">
-        <div className="text-gray-600 body-font relative">
+        <div className="text-gray-600 body-font">
           <div className=" w-full h-full bg-gray-300">
             <iframe
               className="w-full"

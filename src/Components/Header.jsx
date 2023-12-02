@@ -103,7 +103,7 @@ const Header = () => {
               }
               to="/Book"
             >
-              Book
+              book
             </NavLink>
             <NavLink
               className={({ isActive }) =>
