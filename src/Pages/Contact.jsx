@@ -5,15 +5,19 @@ import HeroSection from "../Components/HeroSection";
 const Contact = () => {
   const info = {
     subtitle: false,
-    button: false,
+    button: true,
+    bookBtn: true,
+    callBtn: false,
+    btnText: "Contact Us",
     title: "Contact Us",
     text: "Greetings from the Umrah taxi service. We are committed to provide the most up-to-date information about umrah taxi services.Our goal is to offer creative and environmentally friendly transportation options that make it easier for Muslims to travel for religious, academic, and cultural purposes. <br> <br> We are a company that values cooperation, respect, excellence, and services.",
-    img_link: "https://svgshare.com/i/10Mj.svg",
+    img_link: "https://i.ibb.co/7ncyKGh/Service-24-7-1.gif",
   };
   return (
     <>
       <Breadcrumbs page="Contact" link="/contact" />
       <HeroSection hero_value={info} />
+      {/* CTA Icon */}
       <div className="container flex flex-col mx-auto bg-white">
         <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-6xl">
           <span>
@@ -91,6 +95,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* Google Map */}
       <div className="container">
         <div className="text-gray-600 body-font relative">
           <div className=" w-full h-full bg-gray-300">
@@ -102,6 +107,48 @@ const Contact = () => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+        </div>
+      </div>
+      {/* Cantact Form */}
+      <div className="container flex flex-col mx-auto bg-white">
+        <div className="flex justify-center mt-10 text-4xl font-extrabold leading-tight lg:text-6xl">
+          <span>
+            Contact
+            <span className="text-yellow-400"> Us</span>
+          </span>
+        </div>
+        <div class="w-full p-8 my-4 md:px-12 mr-auto">
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-5">
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline number"
+              type="number"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="my-4">
+            <textarea
+              placeholder="Message"
+              class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            ></textarea>
+          </div>
+          <div class="my-2">
+            <button
+              class="uppercase text-sm font-bold tracking-wide bg-yellow-400 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline"
+            >
+              Send Message
+            </button>
           </div>
         </div>
       </div>

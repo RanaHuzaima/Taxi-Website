@@ -10,6 +10,9 @@ const Home = () => {
   const hero_info = {
     subtitle: true,
     button: true,
+    bookBtn: true,
+    callBtn: true,
+    btnText: "Book Now",
     title: "Lets Book Your Umrah Taxi Instantly",
     text: "Experience seamless and convenient Umrah pilgrimage with our top-notch Umrah Taxi Service. We offer reliable transportation, experienced drivers, and exceptional customer service to ensure a worry-free journey.",
     img_link: "https://i.ibb.co/jGc4tmQ/taxi-img.jpg",

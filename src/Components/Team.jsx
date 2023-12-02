@@ -22,6 +22,7 @@ const Team = () => {
             ></svg>
           </header>
           <div className="flex flex-wrap flex-row -mx-4 justify-center">
+            {/* Team Member 01 */}
             <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
               <div
                 className="relative overflow-hidden bg-white  mb-12 hove-grayscale-0 wow fadeInUp"
@@ -134,6 +135,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
+            {/* Team Member 02 */}
             <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
               <div
                 className="relative overflow-hidden bg-white  mb-12 hove-grayscale-0 wow fadeInUp"
@@ -144,6 +146,7 @@ const Team = () => {
                     src="https://rb.gy/1a047l"
                     className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
+                    loading="lazy"
                   />
                 </div>
                 <div className="pt-6 text-center">
