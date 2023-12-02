@@ -22,11 +22,11 @@ const Contact = () => {
         </div>
 
         <div className="grid w-full grid-cols-1 my-auto mt-8 mb-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 md:gap-5">
-          <div class="p-10 flex flex-col items-center text-center   hover:bg-slate-50 cursor-pointer">
-            <span class="p-5 rounded-full bg-yellow-400 text-white shadow-lg shadow-slate-400">
+          <div className="p-10 flex flex-col items-center text-center   hover:bg-slate-50 cursor-pointer">
+            <span className="p-5 rounded-full bg-yellow-400 text-white shadow-lg shadow-slate-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -35,16 +35,16 @@ const Contact = () => {
                 <path d="M12 2c3.196 0 6 2.618 6 5.602 0 2.238-1.058 3.488-2.659 5.381-1.078 1.274-2.303 2.722-3.341 4.697-1.038-1.976-2.263-3.423-3.341-4.697-1.601-1.893-2.659-3.143-2.659-5.381 0-2.984 2.804-5.602 6-5.602zm0-2c-4.198 0-8 3.403-8 7.602 0 6.243 6.377 6.903 8 16.398 1.623-9.495 8-10.155 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
               </svg>
             </span>
-            <p class="text-xl font-medium text-slate-700 mt-3">Location</p>
-            <p class="mt-2 text-sm text-slate-500">
+            <p className="text-xl font-medium text-slate-700 mt-3">Location</p>
+            <p className="mt-2 text-sm text-slate-500">
               Makkah Al-Mukarma Kingdom Saudi Arabia
             </p>
           </div>
-          <div class="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
-            <span class="p-5 rounded-full bg-yellow-400 text-white shadow-lg shadow-slate-400">
+          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
+            <span className="p-5 rounded-full bg-yellow-400 text-white shadow-lg shadow-slate-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -53,19 +53,19 @@ const Contact = () => {
                 <path d="M8.26 1.289l-1.564.772c-5.793 3.02 2.798 20.944 9.31 20.944.46 0 .904-.094 1.317-.284l1.542-.755-2.898-5.594-1.54.754c-.181.087-.384.134-.597.134-2.561 0-6.841-8.204-4.241-9.596l1.546-.763-2.875-5.612zm7.746 22.711c-5.68 0-12.221-11.114-12.221-17.832 0-2.419.833-4.146 2.457-4.992l2.382-1.176 3.857 7.347-2.437 1.201c-1.439.772 2.409 8.424 3.956 7.68l2.399-1.179 3.816 7.36s-2.36 1.162-2.476 1.215c-.547.251-1.129.376-1.733.376" />
               </svg>
             </span>
-            <p class="text-xl font-medium text-slate-700 mt-3">
+            <p className="text-xl font-medium text-slate-700 mt-3">
               Contact Number
             </p>
-            <p class="mt-2 text-sm text-slate-500">
+            <p className="mt-2 text-sm text-slate-500">
               <a href="tel:+966-59-670-4817">+966-59-670-4817</a> <br />
               <a href="tel:+966-59-670-4817">+966-59-670-6891</a>
             </p>
           </div>
-          <div class="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
-            <span class="p-5 rounded-full  bg-yellow-400 text-white shadow-lg shadow-slate-400">
+          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
+            <span className="p-5 rounded-full  bg-yellow-400 text-white shadow-lg shadow-slate-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -78,8 +78,10 @@ const Contact = () => {
                 />
               </svg>
             </span>
-            <p class="text-xl font-medium text-slate-700 mt-3">Mail Address</p>
-            <p class="mt-2 text-sm text-slate-500">
+            <p className="text-xl font-medium text-slate-700 mt-3">
+              Mail Address
+            </p>
+            <p className="mt-2 text-sm text-slate-500">
               <a href="mailto:huzaima@gmail.com">
                 booking@UmrahTaxiService.com
               </a>{" "}
@@ -88,6 +90,22 @@ const Contact = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="container">
+        <section className="text-gray-600 body-font relative">
+          <div className=" w-full h-full bg-gray-300">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="map"
+              scrolling="no"
+              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            ></iframe>
+          </div>
+        </section>
       </div>
     </>
   );
