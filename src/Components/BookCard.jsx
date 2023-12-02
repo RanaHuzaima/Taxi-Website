@@ -16,7 +16,7 @@ const BookCard = ({ data }) => {
             </a>
             <a
               href="#"
-              className="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-sm px-3 py-2 text-center flex mt-4 items-center"
+              className="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-xl px-3 py-2 text-center flex mt-4 items-center justify-center"
             >
               Book Now
               <svg

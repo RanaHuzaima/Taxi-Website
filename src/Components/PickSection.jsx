@@ -30,13 +30,13 @@ const PickSection = () => {
   ];
   return (
     <>
-      <div className="container mx-auto bg-white mb-12">
+      <div className="container text-center mx-auto bg-white mb-12 ">
         <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
           <span>
             Pick Your <span className="text-yellow-400">Umrah</span> Taxi
           </span>
         </div>
-        <div className="flex gap-4 lg:flex-nowrap flex-wrap">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
           {/* Book Card */}
           <BookCard data={cardata} />
         </div>
