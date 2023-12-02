@@ -4,7 +4,10 @@ const BookCard = ({ data }) => {
   return (
     <>
       {data.map((data) => (
-        <div key={data.name} className="bg-white shadow-md border border-gray-200 rounded-lg ">
+        <div
+          key={data.name}
+          className="bg-white shadow-md border border-gray-200 rounded-lg "
+        >
           <a href="#">
             <img className="rounded-t-lg" src={data.link} alt="" />
           </a>
