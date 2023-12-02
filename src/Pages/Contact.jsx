@@ -92,20 +92,18 @@ const Contact = () => {
         </div>
       </div>
       <div className="container">
-        <section className="text-gray-600 body-font relative">
+        <div className="text-gray-600 body-font relative">
           <div className=" w-full h-full bg-gray-300">
             <iframe
-              width="100%"
-              height="100%"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              title="map"
-              scrolling="no"
-              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              className="w-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951142.3876132265!2d38.655573678124995!3d21.374151100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c205ec2de11183%3A0xf8e8dc7efb6d0e0f!2sUmrah%20Taxi%20Service!5e0!3m2!1sen!2s!4v1701507349703!5m2!1sen!2s"
+              height="500px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );
