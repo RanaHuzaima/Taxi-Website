@@ -10,7 +10,7 @@ const BookCard = ({ data }) => {
           className="bg-white shadow-md border border-gray-200 rounded-lg "
         >
           <Link to="/Book">
-            <img className="rounded-t-lg" src={data.link} alt="" />
+            <img className="rounded-t-lg" src={data.link} alt={data.name} />
           </Link>
           <div className="p-5">
             <span className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">

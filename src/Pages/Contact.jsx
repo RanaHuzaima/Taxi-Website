@@ -5,9 +5,7 @@ import HeroSection from "../Components/HeroSection";
 const Contact = () => {
   const info = {
     subtitle: false,
-    button: true,
-    bookBtn: true,
-    callBtn: false,
+    button: false,
     btnText: "Contact Us",
     title: "Contact Us",
     text: "Greetings from the Umrah taxi service. We are committed to provide the most up-to-date information about umrah taxi services.Our goal is to offer creative and environmentally friendly transportation options that make it easier for Muslims to travel for religious, academic, and cultural purposes. <br> <br> We are a company that values cooperation, respect, excellence, and services.",
