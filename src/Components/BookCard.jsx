@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ data }) => {
   return (
@@ -8,17 +9,15 @@ const BookCard = ({ data }) => {
           key={data.name}
           className="bg-white shadow-md border border-gray-200 rounded-lg "
         >
-          <a href="#">
+          <Link to="/Book">
             <img className="rounded-t-lg" src={data.link} alt="" />
-          </a>
+          </Link>
           <div className="p-5">
-            <a href="#">
-              <span className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
-                {data.name}
-              </span>
-            </a>
-            <a
-              href="#"
+            <span className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+              {data.name}
+            </span>
+            <Link
+              to="/Book"
               className="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-xl px-3 py-2 text-center flex mt-4 items-center justify-center"
             >
               Book Now
@@ -34,7 +33,7 @@ const BookCard = ({ data }) => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       ))}
