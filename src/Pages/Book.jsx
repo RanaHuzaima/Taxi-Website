@@ -1,8 +1,33 @@
 import React from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import BookCarList from "../Components/BookCarList";
+import { useEffect } from "react";
 
 const Book = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   const handleScroll = () => {
+  //     window.scrollTo(0, 0);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = (event) => {
+      // Check if the user is scrolling down
+      if (window.scrollY > 0) {
+        // Prevent the default scroll behavior
+        event.preventDefault();
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const data = [
     {
       carName: "Camry Car Service",
