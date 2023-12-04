@@ -4,16 +4,6 @@ import BookCarList from "../Components/BookCarList";
 import { useEffect } from "react";
 
 const Book = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   const handleScroll = () => {
-  //     window.scrollTo(0, 0);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
     const handleScroll = (event) => {
