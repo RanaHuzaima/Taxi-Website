@@ -43,7 +43,7 @@ const HeroSection = ({ hero_value }) => {
             ></p>
             {button && (
               <div className="flex flex-col items-center gap-4 lg:flex-row">
-                {bookBtn && <Button btnText={btnText} btnLink="/Book" />}
+                {bookBtn && <Button btnText={btnText} btnLink="/book" />}
                 {callBtn && <CallBtn />}
               </div>
             )}

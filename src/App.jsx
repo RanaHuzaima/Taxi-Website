@@ -8,6 +8,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "./app.css";
 import Whatsappicon from "./Components/Whatsappicon";
+import TermCondition from "./Pages/TermCondition";
+import Disclaimer from "./Pages/Disclaimer";
 
 const App = () => {
   return (
@@ -18,7 +20,7 @@ const App = () => {
         <Route path="/" element={<Home />}>
           Home
         </Route>
-        <Route path="/Book" element={<Book />}>
+        <Route path="/book" element={<Book />}>
           Book
         </Route>
         <Route path="/about" element={<About />}>
@@ -26,6 +28,12 @@ const App = () => {
         </Route>
         <Route path="/contact" element={<Contact />}>
           Contact Us
+        </Route>
+        <Route path="/terms-conditions" element={<TermCondition />}>
+          Term & Condition
+        </Route>
+        <Route path="/disclaimer" element={<Disclaimer />}>
+          Disclaimer
         </Route>
       </Routes>
       <Footer />

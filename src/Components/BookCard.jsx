@@ -9,7 +9,7 @@ const BookCard = ({ data }) => {
           key={data.name}
           className="bg-white shadow-md border border-gray-200 rounded-lg "
         >
-          <Link to="/Book">
+          <Link to="/book">
             <img className="rounded-t-lg" src={data.link} alt={data.name} />
           </Link>
           <div className="p-5">
@@ -17,7 +17,7 @@ const BookCard = ({ data }) => {
               {data.name}
             </span>
             <Link
-              to="/Book"
+              to="/book"
               className="text-white bg-yellow-400 hover:bg-yellow-600 font-medium rounded-lg text-xl px-3 py-2 text-center flex mt-4 items-center justify-center"
             >
               Book Now

@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import HeroSection from "../Components/HeroSection";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = (event) => {
+      // Check if the user is scrolling down
+      if (window.scrollY > 0) {
+        // Prevent the default scroll behavior
+        event.preventDefault();
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const info = {
     subtitle: false,
     button: false,

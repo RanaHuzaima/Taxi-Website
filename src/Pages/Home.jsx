@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../Components/HeroSection";
 import Fleet from "../Components/Fleet";
 import SimpleSection from "../Components/SimpleSection";
@@ -7,6 +7,20 @@ import ChooseSection from "../Components/ChooseSection";
 import TestimonialSection from "../Components/TestimonialSection";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = (event) => {
+      // Check if the user is scrolling down
+      if (window.scrollY > 0) {
+        // Prevent the default scroll behavior
+        event.preventDefault();
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const hero_info = {
     subtitle: true,
     button: true,
