@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import HeroSection from "../Components/HeroSection";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   useEffect(() => {
@@ -17,6 +18,29 @@ const Contact = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_k9fd8tn",
+        "template_n1nnh07",
+        form.current,
+        "dys7SFrmJ2i985__K"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message Sent");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   const info = {
     subtitle: false,
     button: false,
@@ -130,27 +154,27 @@ const Contact = () => {
             <span className="text-yellow-400"> Us</span>
           </span>
         </div>
-        <form action="https://formspree.io/f/xoqoogal" method="POST">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="w-full p-8 my-4 md:px-12 mr-auto">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3 mt-5">
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
-                name="Name"
+                name="name"
                 placeholder="Name"
                 required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
-                name="Email"
+                name="email"
                 placeholder="Email"
                 required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline number"
                 type="number"
-                name="Phone-Number"
+                name="phone-number"
                 placeholder="Phone Number"
                 required
               />
@@ -158,7 +182,7 @@ const Contact = () => {
             <div className="my-4">
               <textarea
                 placeholder="Message"
-                name="Message"
+                name="message"
                 required
                 className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               ></textarea>
