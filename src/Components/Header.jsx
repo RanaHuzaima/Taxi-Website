@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import CallBtn from "./CallBtn";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
   return (
     <>
       <div className={"container flex flex-col mx-auto"}>
-        <div className="relative flex flex-wrap items-center justify-between mb-3 w-full group pt-3 shrink-0">
+        <div className="relative flex flex-wrap  items-center justify-between mb-3 w-full group pt-3 shrink-0">
           <div>
             <img
               className="lg:h-20 h-16 cursor-pointer"
@@ -63,7 +64,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="items-center hidden gap-8 md:flex">
-            <Button btnText="Contact Us" btnLink="/contact" />
+            <CallBtn />
           </div>
           <button onClick={handleButtonClick} className="flex md:hidden">
             <svg
