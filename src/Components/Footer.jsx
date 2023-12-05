@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_k9fd8tn",
+        "template_74hfv6g",
+        form.current,
+        "dys7SFrmJ2i985__K"
+      )
+      .then(
+        (result) => {
+          alert("Message Sent");
+          e.target.reset();
+        },
+        (error) => {
+          alert("Message Not Sent");
+        }
+      );
+  };
   return (
     <>
       <footer className="bg-white container">
@@ -13,9 +36,10 @@ const Footer = () => {
               </h1>
 
               <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                <form action="#">
+                <form ref={form} onSubmit={sendEmail}>
                   <input
                     id="email"
+                    name="email"
                     required
                     type="text"
                     className="px-4 py-2 text-gray-700 bg-white border rounded-md w-full mb-3 focus:border-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
