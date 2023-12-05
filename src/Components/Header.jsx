@@ -1,8 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+
+      // Adjust the offset value based on your design needs
+      const stickyThreshold = 100;
+
+      setIsSticky(offset > stickyThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -11,8 +29,14 @@ const Header = () => {
 
   return (
     <>
-      <div className="container flex flex-col mx-auto bg-white">
-        <div className="relative flex flex-wrap items-center justify-between w-full bg-white group py-7 shrink-0">
+      <div
+        className={`${
+          isSticky
+            ? "fixed top-0 left-0 right-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100"
+            : ""
+        } container flex flex-col mx-auto`}
+      >
+        <div className="relative flex flex-wrap items-center justify-between w-full group pt-3 shrink-0">
           <div>
             <img
               className="lg:h-20 h-16 cursor-pointer"
