@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Breadcrumbs = ({ page, link }) => {
   return (
     <>
-      <div className="container flex flex-col mx-auto bg-white">
+      <div className="container flex flex-col mx-auto bg-white mt-3">
         <div className=" text-left hidden md:block">
           <nav aria-label="breadcrumb">
             <ol className="flex w-full flex-wrap items-center rounded-md bg-blue-gray-50 bg-opacity-60">
