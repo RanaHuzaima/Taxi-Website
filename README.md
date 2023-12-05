@@ -26,7 +26,7 @@ To install the Taxi App, follow these steps:
 2. Change into the project directory:
 
    ```bash
-   cd taxi-app
+   cd Taxi-Website
    ```
 
 3. Install dependencies:
