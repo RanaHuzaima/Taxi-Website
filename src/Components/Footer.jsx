@@ -4,39 +4,41 @@ import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer class="bg-white container">
-        <div class="container px-6 pt-12 mx-auto">
-          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div class="sm:col-span-2">
-              <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl ">
+      <footer className="bg-white container">
+        <div className="container px-6 pt-12 mx-auto">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+            <div className="sm:col-span-2">
+              <h1 className="max-w-lg text-xl font-semibold text-center md:text-start tracking-tight text-gray-800 xl:text-2xl ">
                 Subscribe our newsletter to get update.
               </h1>
 
-              <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                <form action="#" onClick="">
+              <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                <form action="#">
                   <input
                     id="email"
                     required
                     type="text"
-                    class="px-4 py-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                    className="px-4 py-2 text-gray-700 bg-white border rounded-md w-full mb-3 focus:border-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
                     placeholder="Email Address"
                   />
 
-                  <button class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-yellow-400 rounded-lg hover:bg-yellow-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                  <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto  focus:outline-none bg-yellow-400 rounded-lg hover:bg-yellow-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                     Subscribe
                   </button>
                 </form>
               </div>
             </div>
 
-            <div>
-              <p class="font-bold text-gray-800 ">Quick Link</p>
-              <ul class="flex flex-col items-start mt-5 space-y-2" s>
+            <div className="flex items-center flex-col">
+              <p className=" text-gray-800 text-2xl font-extrabold ">
+                Quick Link
+              </p>
+              <ul className="flex flex-col items-center mt-5 space-y-2">
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-semibold hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 " : ""
                       }`
                     }
                     to="/"
@@ -47,7 +49,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                      `font-semibold  hover:text-yellow-400  rounded-lg ${
                         isActive ? "text-yellow-400" : ""
                       }`
                     }
@@ -59,7 +61,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                      `font-semibold  hover:text-yellow-400  rounded-lg ${
                         isActive ? "text-yellow-400" : ""
                       }`
                     }
@@ -71,7 +73,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                      `font-semibold  hover:text-yellow-400  rounded-lg ${
                         isActive ? "text-yellow-400" : ""
                       }`
                     }
@@ -82,13 +84,15 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <p class="font-bold text-gray-800 ">Other Link</p>
-              <ul class="flex flex-col items-start mt-5 space-y-2" s>
+            <div className="flex items-center flex-col">
+              <p className=" text-gray-800 text-2xl font-extrabold ">
+                Other Link
+              </p>
+              <ul className="flex flex-col items-center mt-5 space-y-2">
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold hover:text-yellow-400  rounded-lg ${
+                      `font-semibold hover:text-yellow-400  rounded-lg ${
                         isActive ? "text-yellow-400" : ""
                       }`
                     }
@@ -100,7 +104,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                      `font-semibold  hover:text-yellow-400  rounded-lg ${
                         isActive ? "text-yellow-400" : ""
                       }`
                     }
@@ -113,26 +117,26 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr class="my-6 border-gray-200 " />
+          <hr className="my-6 border-gray-200 " />
 
-          <div class="flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <a href="#">
               <img
-                class="w-auto h-16"
+                className="w-auto h-16"
                 src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"
                 alt="footer-logo"
               />
             </a>
 
-            <div class="flex -mx-2">
+            <div className="flex -mx-2">
               <a
                 href="#"
                 target="_blank"
-                class="mx-2 text-gray-600 transition-colors duration-300  hover:text-blue-500 "
+                className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Facebook"
               >
                 <svg
-                  class="w-5 h-5 fill-current"
+                  className="w-5 h-5 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +147,11 @@ const Footer = () => {
 
               <a
                 href="#"
-                class="mx-2 text-gray-600 transition-colors duration-300  hover:text-blue-500 "
+                className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Instagram"
               >
                 <svg
-                  class="w-5 h-5 fill-current"
+                  className="w-5 h-5 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -159,11 +163,11 @@ const Footer = () => {
               <a
                 href="#"
                 target="_blank"
-                class="mx-2 text-gray-600 transition-colors duration-300  hover:text-blue-500 "
+                className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Whatsapp"
               >
                 <svg
-                  class="w-5 h-5 fill-current"
+                  className="w-5 h-5 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
