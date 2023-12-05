@@ -27,8 +27,8 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="bg-white container">
-        <div className="container px-6 pt-12 mx-auto">
+      <footer className="container">
+        <div className="container px-6 pt-12 mx-auto bg-gray-300 rounded-lg">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
               <h1 className="max-w-lg text-xl font-semibold text-center md:text-start tracking-tight text-gray-800 xl:text-2xl ">
@@ -201,14 +201,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          <span className="block text-sm mb-2 text-center">
+            © 2023{" "}
+            <Link to="/" className="hover:underline cursor-pointer">
+              UMRAH TAXI™
+            </Link>
+            . All Rights Reserved.
+          </span>
         </div>
-        <span className="block text-sm mb-2 text-gray-500 text-center">
-          © 2023{" "}
-          <Link to="/" className="hover:underline cursor-pointer">
-            UMRAH TAXI™
-          </Link>
-          . All Rights Reserved.
-        </span>
       </footer>
     </>
   );
