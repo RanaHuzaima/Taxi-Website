@@ -12,7 +12,7 @@ const Whatsappicon = () => {
             <a href="https://wa.me/923009464666" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-12 md:w-16 lg:w-16 group"
+                className="w-12 md:w-16 lg:w-16 group bg-white rounded-full"
                 viewBox="0 0 24 24"
                 fill="green"
               >
