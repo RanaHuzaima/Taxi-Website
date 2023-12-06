@@ -9,6 +9,10 @@ const Header = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  const closeDropdown = () => {
+    setIsOpen(false);
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -17,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={"container flex flex-col mx-auto"}>
+      <div className="container flex flex-col mx-auto">
         <div className="relative flex flex-wrap  items-center justify-between mb-3 w-full group pt-3 shrink-0">
           <div>
             <img
@@ -33,6 +37,7 @@ const Header = () => {
                   isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
                 }`
               }
+              onClick={closeDropdown}
               to="/"
             >
               Home
@@ -43,29 +48,10 @@ const Header = () => {
                   isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
                 }`
               }
+              onClick={closeDropdown}
               to="/Book"
             >
               Book
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
-                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
-                }`
-              }
-              to="/about"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
-                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
-                }`
-              }
-              to="/contact"
-            >
-              Contact Us
             </NavLink>
             <div className="relative">
               <a
@@ -81,71 +67,127 @@ const Header = () => {
                 id="dropdown"
                 className={`z-10 ${
                   isOpen ? "block" : "hidden"
-                } bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute`}
+                } bg-white divide-y divide-gray-100 border rounded-lg shadow w-44 absolute`}
               >
                 <ul
-                  className="py-2 text-sm text-gray-700 "
+                  className="py-2 text-sm text-black "
                   aria-labelledby="dropdownDefaultButton"
                 >
                   <li>
                     <NavLink
-                      to="#"
+                      to="/camry-car-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Dashboard
+                      Camry Car
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/gmc-car-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Settings
+                      GMC Car
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/hyundai-staria-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Earnings
+                      Hyundai Staria
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/toyota-hiace-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Sign out
+                      Toyota HiAce
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/h1-hyundai-packages"
+                      onClick={closeDropdown}
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      H1 Hyundai Car
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/Innova-car-packages"
+                      onClick={closeDropdown}
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Innova Car
                     </NavLink>
                   </li>
                 </ul>
               </div>
             </div>
+            <NavLink
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
+              onClick={closeDropdown}
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                  isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
+                }`
+              }
+              onClick={closeDropdown}
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
           </div>
           <div className="items-center hidden gap-8 md:flex">
             <CallBtn py="py-3" px="px-3" />
@@ -190,26 +232,6 @@ const Header = () => {
             >
               Book
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `font-bold  hover:text-yellow-400 border rounded-lg ${
-                  isActive ? "text-yellow-400" : ""
-                }`
-              }
-              to="/about"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `font-bold  hover:text-yellow-400 border rounded-lg ${
-                  isActive ? "text-yellow-400" : ""
-                }`
-              }
-              to="/contact"
-            >
-              Contact Us
-            </NavLink>
             <div className="">
               <a
                 className="text-black font-bold  hover:text-yellow-400 flex items-center cursor-pointer border rounded-lg justify-center"
@@ -232,64 +254,118 @@ const Header = () => {
                 >
                   <li>
                     <NavLink
-                      to="#"
+                      to="/camry-car-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Dashboard
+                      Camry Car
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/gmc-car-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Settings
+                      GMC Car
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/hyundai-staria-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Earnings
+                      Hyundai Staria
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="#"
+                      to="/toyota-hiace-packages"
+                      onClick={closeDropdown}
                       className={({ isActive }) =>
-                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
                           isActive
                             ? "text-yellow-400 border p-2 rounded-lg m-2"
                             : ""
                         }`
                       }
                     >
-                      Sign out
+                      Toyota HiAce
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/h1-hyundai-packages"
+                      onClick={closeDropdown}
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      H1 Hyundai Car
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/Innova-car-packages"
+                      onClick={closeDropdown}
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:text-yellow-400 hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Innova Car
                     </NavLink>
                   </li>
                 </ul>
               </div>
             </div>
-            <Button btnText="Contact Us" btnLink="/contact" py="py-1"/>
+            <NavLink
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `font-bold  hover:text-yellow-400 border rounded-lg ${
+                  isActive ? "text-yellow-400" : ""
+                }`
+              }
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
+            <Button btnText="Contact Us" btnLink="/contact" py="py-1" />
           </div>
         </div>
       </div>
