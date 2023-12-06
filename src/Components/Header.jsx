@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import CallBtn from "./CallBtn";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,18 +13,18 @@ const Header = () => {
   return (
     <>
       <div className={"container flex flex-col mx-auto"}>
-        <div className="relative flex flex-wrap items-center justify-between mb-3 w-full group pt-3 shrink-0">
+        <div className="relative flex flex-wrap  items-center justify-between mb-3 w-full group pt-3 shrink-0">
           <div>
             <img
               className="lg:h-20 h-16 cursor-pointer"
               src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"
             />
           </div>
-          <div className="items-center justify-between hidden gap-12 text-black md:flex">
+          <div className="items-center justify-between hidden sm:text-sm gap-12 text-black md:flex">
             {/* Add your NavLink components here */}
             <NavLink
               className={({ isActive }) =>
-                `lg:text-2xl font-semibold  hover:text-yellow-400 ${
+                `lg:text-2xl  font-semibold  hover:text-yellow-400 ${
                   isActive ? "text-yellow-400 border p-2 rounded-lg" : ""
                 }`
               }
@@ -61,9 +62,86 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
+            {/* <a
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              data-dropdown-trigger="hover"
+              className="lg:text-2xl font-semibold  hover:text-yellow-400 flex items-center"
+              type="button"
+            >
+              Packages
+            </a> */}
+
+            {/* <!-- Dropdown menu --> */}
+            {/* <div
+              id="dropdown"
+              className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+            >
+              <ul
+                className="py-2 text-sm text-gray-700 "
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Settings
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Earnings
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Sign out
+                  </NavLink>
+                </li>
+              </ul>
+            </div> */}
           </div>
           <div className="items-center hidden gap-8 md:flex">
-            <Button btnText="Contact Us" btnLink="/contact" />
+            <CallBtn py="py-4" px="px-3" />
           </div>
           <button onClick={handleButtonClick} className="flex md:hidden">
             <svg
@@ -125,6 +203,82 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
+            <a
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              data-dropdown-trigger="hover"
+              className="lg:text-2xl font-bold  hover:text-yellow-400 flex items-center border rounded-lg justify-center"
+            >
+              Packages
+            </a>
+
+            {/* <!-- Dropdown menu --> */}
+            <div
+              id="dropdown"
+              className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+            >
+              <ul
+                className="py-2 text-sm text-gray-700 "
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Settings
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Earnings
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="#"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                        isActive
+                          ? "text-yellow-400 border p-2 rounded-lg m-2"
+                          : ""
+                      }`
+                    }
+                  >
+                    Sign out
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
             <Button btnText="Contact Us" btnLink="/contact" />
           </div>
         </div>
