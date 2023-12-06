@@ -4,6 +4,11 @@ import Button from "./Button";
 import CallBtn from "./CallBtn";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -62,86 +67,88 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
-            {/* <a
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
-              data-dropdown-trigger="hover"
-              className="lg:text-2xl font-semibold  hover:text-yellow-400 flex items-center"
-              type="button"
-            >
-              Packages
-            </a> */}
-
-            {/* <!-- Dropdown menu --> */}
-            {/* <div
-              id="dropdown"
-              className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-            >
-              <ul
-                className="py-2 text-sm text-gray-700 "
-                aria-labelledby="dropdownDefaultButton"
+            <div className="relative">
+              <a
+                className="lg:text-2xl font-semibold  hover:text-yellow-400 flex items-center cursor-pointer"
+                type="button"
+                onClick={toggleDropdown}
               >
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Dashboard
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Settings
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Earnings
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Sign out
-                  </NavLink>
-                </li>
-              </ul>
-            </div> */}
+                Packages
+              </a>
+
+              {/* <!-- Dropdown menu --> */}
+              <div
+                id="dropdown"
+                className={`z-10 ${
+                  isOpen ? "block" : "hidden"
+                } bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute`}
+              >
+                <ul
+                  className="py-2 text-sm text-gray-700 "
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Dashboard
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Settings
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Earnings
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Sign out
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="items-center hidden gap-8 md:flex">
-            <CallBtn py="py-4" px="px-3" />
+            <CallBtn py="py-3" px="px-3" />
           </div>
           <button onClick={handleButtonClick} className="flex md:hidden">
             <svg
@@ -158,7 +165,7 @@ const Header = () => {
             </svg>
           </button>
           <div
-            className={`absolute flex md:hidden transition-all duration-300 ease-in-out flex-col shadow-main text-center justify-center mt-4 w-full gap-3 overflow-hidden bg-white max-h-0 ${
+            className={` flex md:hidden transition-all duration-300 ease-in-out flex-col shadow-main text-center justify-center mt-4 w-full gap-3 overflow-hidden bg-white max-h-0 ${
               menuOpen ? "py-4 px-4 rounded-2xl max-h-64" : ""
             } top-full border `}
           >
@@ -203,83 +210,86 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
-            <a
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
-              data-dropdown-trigger="hover"
-              className="lg:text-2xl font-bold  hover:text-yellow-400 flex items-center border rounded-lg justify-center"
-            >
-              Packages
-            </a>
-
-            {/* <!-- Dropdown menu --> */}
-            <div
-              id="dropdown"
-              className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-            >
-              <ul
-                className="py-2 text-sm text-gray-700 "
-                aria-labelledby="dropdownDefaultButton"
+            <div className="">
+              <a
+                className="text-black font-bold  hover:text-yellow-400 flex items-center cursor-pointer border rounded-lg justify-center"
+                type="button"
+                onClick={toggleDropdown}
               >
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Dashboard
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Settings
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Earnings
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="#"
-                    className={({ isActive }) =>
-                      `block px-4 py-2 font-bold hover:bg-gray-100 ${
-                        isActive
-                          ? "text-yellow-400 border p-2 rounded-lg m-2"
-                          : ""
-                      }`
-                    }
-                  >
-                    Sign out
-                  </NavLink>
-                </li>
-              </ul>
+                Packages
+              </a>
+
+              {/* <!-- Dropdown menu --> */}
+              <div
+                id="dropdown"
+                className={`z-10 ${
+                  isOpen ? "block" : "hidden"
+                } bg-white divide-y divide-gray-100 border rounded-lg  shadow w-44 absolute`}
+              >
+                <ul
+                  className="py-2 text-sm text-gray-700 "
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Dashboard
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Settings
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Earnings
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="#"
+                      className={({ isActive }) =>
+                        `block px-4 py-2 font-bold hover:bg-gray-100 ${
+                          isActive
+                            ? "text-yellow-400 border p-2 rounded-lg m-2"
+                            : ""
+                        }`
+                      }
+                    >
+                      Sign out
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <Button btnText="Contact Us" btnLink="/contact" />
+            <Button btnText="Contact Us" btnLink="/contact" py="py-1"/>
           </div>
         </div>
       </div>
