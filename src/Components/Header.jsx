@@ -141,11 +141,7 @@ const Header = () => {
             </div> */}
           </div>
           <div className="items-center hidden gap-8 md:flex">
-<<<<<<< HEAD
             <CallBtn py="py-4" px="px-3" />
-=======
-            <CallBtn />
->>>>>>> 0715f8a41ee007e12aef6b68f9219ac968db6413
           </div>
           <button onClick={handleButtonClick} className="flex md:hidden">
             <svg
