@@ -5,7 +5,7 @@ const TestimonialSection = () => {
     <>
       <div className="container mx-auto bg-white mt-10 mb-10">
         <div className="container flex text-center flex-col m-auto px-6 md:px-12 xl:px-6">
-          <span className="mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+          <span className="mb-14 text-4xl font-extrabold leading-tight lg:text-5xl">
             Some Our <span className="text-yellow-400">Testimonial</span>
           </span>
           <div className="grid gap-8 md:grid-rows-2 lg:grid-cols-2">

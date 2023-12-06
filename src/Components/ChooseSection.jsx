@@ -4,7 +4,7 @@ const ChooseSection = () => {
   return (
     <>
       <div className="container mx-auto bg-white">
-        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-5xl">
           <span>
             Why <span className="text-yellow-400">Choose</span> Us
           </span>

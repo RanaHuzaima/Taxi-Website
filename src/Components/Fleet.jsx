@@ -31,7 +31,7 @@ const Fleet = () => {
   return (
     <>
       <div className="container mx-auto bg-white">
-        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-5xl">
           <span>
             Our <span className="text-yellow-400">Fleets</span>
           </span>

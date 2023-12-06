@@ -31,7 +31,7 @@ const PickSection = () => {
   return (
     <>
       <div className="container text-center mx-auto bg-white mb-12 ">
-        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-6xl">
+        <div className="flex justify-center mb-14 text-4xl font-extrabold leading-tight lg:text-5xl">
           <span>
             Pick Your <span className="text-yellow-400">Umrah</span> Taxi
           </span>

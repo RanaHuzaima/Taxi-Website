@@ -55,7 +55,7 @@ const Contact = () => {
       <HeroSection hero_value={info} />
       {/* CTA Icon */}
       <div className="container flex flex-col mx-auto bg-white">
-        <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-6xl">
+        <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-5xl">
           <span>
             <span className="text-yellow-400">Contact</span> Taxi Service
           </span>
@@ -148,7 +148,7 @@ const Contact = () => {
       </div>
       {/* Cantact Form */}
       <div className="container flex flex-col mx-auto bg-white">
-        <div className="flex justify-center mt-10 text-4xl font-extrabold leading-tight lg:text-6xl">
+        <div className="flex justify-center mt-10 text-4xl font-extrabold leading-tight lg:text-5xl">
           <span>
             Contact
             <span className="text-yellow-400"> Us</span>

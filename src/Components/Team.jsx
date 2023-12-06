@@ -6,7 +6,7 @@ const Team = () => {
       <div id="team" className="container pt-20 pb-8 md:pt-16 bg-white">
         <div className=" xl:max-w-6xl mx-auto px-4">
           <header className="text-center mx-auto ">
-            <h2 className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl ">
+            <h2 className="mb-8 text-4xl font-extrabold leading-tight lg:text-5xl ">
               Expert
               <span className="text-yellow-400"> Team</span>
             </h2>

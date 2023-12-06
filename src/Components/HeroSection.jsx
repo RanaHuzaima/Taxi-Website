@@ -23,7 +23,7 @@ const HeroSection = ({ hero_value }) => {
                 </h4>
               </div>
             )}
-            <h1 className="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl">
+            <h1 className="mb-8 text-4xl font-extrabold leading-tight lg:text-5xl">
               {words.map((word, index) => (
                 <span
                   key={index}

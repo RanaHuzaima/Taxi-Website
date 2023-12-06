@@ -282,7 +282,7 @@ const Book = () => {
   return (
     <>
       <Breadcrumbs page="Book" link="/book" />
-      <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-6xl">
+      <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-5xl">
         <span>
           Pick Your <span className="text-yellow-400">Car</span> Taxi
         </span>

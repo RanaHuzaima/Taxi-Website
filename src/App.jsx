@@ -10,7 +10,11 @@ import Contact from "./Pages/Contact";
 import TermCondition from "./Pages/TermCondition";
 import Disclaimer from "./Pages/Disclaimer";
 import CamryCarPackages from "./Pages/CamryCarPackages";
-
+import GmcCarPackages from "./Pages/GmcCarPackages";
+import HyundaiStariaPackages from "./Pages/HyundaiStariaPackages";
+import ToyotaHiAcePackages from "./Pages/ToyotaHiAcePackages";
+import H1HyundaiPackages from "./Pages/H1HyundaiPackages";
+import InnovaCarPackages from "./Pages/InnovaCarPackages";
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -39,6 +43,24 @@ const App = () => {
         </Route>
         <Route path="/camry-car-packages" element={<CamryCarPackages />}>
           Camry Car Packages
+        </Route>
+        <Route path="/gmc-car-packages" element={<GmcCarPackages />}>
+          Gmc Car Packages
+        </Route>
+        <Route
+          path="/hyundai-staria-packages"
+          element={<HyundaiStariaPackages />}
+        >
+          Hyundai Staria Packages
+        </Route>
+        <Route path="/toyota-hiace-packages" element={<ToyotaHiAcePackages />}>
+          Toyota HiAce Packages
+        </Route>
+        <Route path="/h1-hyundai-packages" element={<H1HyundaiPackages />}>
+          H1 Hyundai Packages
+        </Route>
+        <Route path="/Innova-car-packages" element={<InnovaCarPackages />}>
+          Innova Car Packages
         </Route>
       </Routes>
       <Footer />
