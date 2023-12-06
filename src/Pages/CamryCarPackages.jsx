@@ -2,7 +2,7 @@ import React from "react";
 import SimpleSection from "../Components/SimpleSection";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import AlertMessage from "../Components/AlertMessage";
-import PackageItem from "../Components/PackageItem";
+import PackageList from "../Components/PackageList";
 
 const CamryCarPackages = () => {
   const Simple_info = {
@@ -16,7 +16,7 @@ const CamryCarPackages = () => {
       <Breadcrumbs page="Camry-Car" link="/camry-car-packages" />
       <SimpleSection Simple_value={Simple_info} />
       <AlertMessage />
-      <PackageItem />
+      <PackageList />
     </>
   );
 };
