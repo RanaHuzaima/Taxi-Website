@@ -1,7 +1,7 @@
 import React from "react";
 
 const SimpleSection = ({ Simple_value }) => {
-  const { title = "", text } = Simple_value;
+  const { title = "", text, imgLink } = Simple_value;
   const words = title.split(" ");
 
   return (
@@ -23,16 +23,13 @@ const SimpleSection = ({ Simple_value }) => {
                 </span>
               ))}
             </span>
-            <p className="mb-6 text-base font-normal leading-7 lg:w-3/4">
-              {text}
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: text }}
+              className="mb-6 text-base font-normal leading-7 lg:w-3/4"
+            ></p>
           </div>
           <div className="items-center justify-end hidden col-span-1 md:flex">
-            <img
-              className="rounded-md "
-              src="https://harmainziarah.com/wp-content/uploads/2023/08/HarmainZiarah-Vehicles.png"
-              alt="image"
-            />
+            <img className="rounded-md " src={imgLink} alt="image" />
           </div>
         </div>
       </div>
