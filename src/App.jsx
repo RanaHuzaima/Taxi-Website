@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./app.css";
+import Header from "./Components/Header";
+import Whatsappicon from "./Components/Whatsappicon";
 import Home from "./Pages/Home";
 import Book from "./Pages/Book";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import "./app.css";
-import Whatsappicon from "./Components/Whatsappicon";
 import TermCondition from "./Pages/TermCondition";
 import Disclaimer from "./Pages/Disclaimer";
+import CamryCarPackages from "./Pages/CamryCarPackages";
+
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -34,6 +36,9 @@ const App = () => {
         </Route>
         <Route path="/disclaimer" element={<Disclaimer />}>
           Disclaimer
+        </Route>
+        <Route path="/camry-car-packages" element={<CamryCarPackages />}>
+          Camry Car Packages
         </Route>
       </Routes>
       <Footer />
