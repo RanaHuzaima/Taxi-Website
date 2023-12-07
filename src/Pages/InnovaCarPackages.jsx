@@ -3,6 +3,7 @@ import SimpleSection from "../Components/SimpleSection";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import AlertMessage from "../Components/AlertMessage";
 import PackageList from "../Components/PackageList";
+import { motion } from "framer-motion";
 
 const InnovaCarPackages = () => {
   const Simple_info = {
@@ -97,12 +98,16 @@ const InnovaCarPackages = () => {
   ];
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <Breadcrumbs page="Innova-Car" link="/Innova-car-packages" />
       <SimpleSection Simple_value={Simple_info} />
       <AlertMessage />
       <PackageList packagesData={packagesData} />
-    </>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,7 @@ import SimpleSection from "../Components/SimpleSection";
 import PickSection from "../Components/PickSection";
 import ChooseSection from "../Components/ChooseSection";
 import TestimonialSection from "../Components/TestimonialSection";
+import { motion } from "framer-motion";
 
 const Home = () => {
   useEffect(() => {
@@ -38,14 +39,18 @@ const Home = () => {
     text: "Our Umrah Taxi company is first of it’s kind of cab service specializing for in Transport service giving the chance of instant online booking for numerous type of vehicles varying in sizes depending on the number of members in the group. For the best ground transportation experience, let us provide our recognised transport service for your Umrah, family or business trip, parties, airport transfers and corporate travel needs, in Makkah or Madinah.",
   };
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <HeroSection hero_value={hero_info} />
       <Fleet />
       <SimpleSection Simple_value={Simple_info} />
       <PickSection />
       <ChooseSection />
       <TestimonialSection />
-    </>
+    </motion.div>
   );
 };
 

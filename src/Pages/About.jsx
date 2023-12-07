@@ -3,6 +3,7 @@ import Breadcrumbs from "../Components/Breadcrumbs";
 import HeroSection from "../Components/HeroSection";
 import TimelineSection from "../Components/TimelineSection";
 import Team from "../Components/Team";
+import { motion } from "framer-motion";
 
 const About = () => {
   useEffect(() => {
@@ -27,12 +28,16 @@ const About = () => {
     img_link: "https://i.ibb.co/HYq2Dmq/About-Us.gif",
   };
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <Breadcrumbs page="About" link="/about" />
       <HeroSection hero_value={info} />
       <TimelineSection />
       <Team />
-    </>
+    </motion.div>
   );
 };
 

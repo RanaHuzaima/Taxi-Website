@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import HeroSection from "../Components/HeroSection";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   useEffect(() => {
@@ -50,7 +51,11 @@ const Contact = () => {
     img_link: "https://i.ibb.co/7ncyKGh/Service-24-7-1.gif",
   };
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <Breadcrumbs page="Contact" link="/contact" />
       <HeroSection hero_value={info} />
       {/* CTA Icon */}
@@ -195,7 +200,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </>
+    </motion.div>
   );
 };
 

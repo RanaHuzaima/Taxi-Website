@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 
 const TermCondition = () => {
@@ -16,7 +17,11 @@ const TermCondition = () => {
     };
   }, []);
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <div className="container">
         <h2 className="mb-2 text-2xl">
           <strong>Terms and Conditions</strong>
@@ -334,7 +339,7 @@ const TermCondition = () => {
           damage of any nature.
         </p>
       </div>
-    </>
+    </motion.div>
   );
 };
 

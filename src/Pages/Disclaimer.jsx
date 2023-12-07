@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 
 const Disclaimer = () => {
@@ -16,7 +17,11 @@ const Disclaimer = () => {
     };
   }, []);
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <div className="container">
         <h1 className=" font-bold my-2 text-2xl">Disclaimers for Umrah-taxi</h1>
 
@@ -62,7 +67,7 @@ const Disclaimer = () => {
           changes will be prominently posted here.
         </p>
       </div>
-    </>
+    </motion.div>
   );
 };
 

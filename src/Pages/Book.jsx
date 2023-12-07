@@ -2,6 +2,7 @@ import React from "react";
 import Breadcrumbs from "../Components/Breadcrumbs";
 import BookCarList from "../Components/BookCarList";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Book = () => {
   useEffect(() => {
@@ -280,7 +281,11 @@ const Book = () => {
     },
   ];
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transitionDuration: 1000 }}
+    >
       <Breadcrumbs page="Book" link="/book" />
       <div className="flex justify-center text-4xl font-extrabold leading-tight lg:text-5xl">
         <span>
@@ -288,7 +293,7 @@ const Book = () => {
         </span>
       </div>
       <BookCarList carData={data} />
-    </>
+    </motion.div>
   );
 };
 
