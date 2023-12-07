@@ -14,10 +14,11 @@ const BookCarList = ({ carData }) => {
               </h1>
               <div className="flex  gap-3 items-center justify-center lg:justify-start">
                 <a className="flex gap-2 text-center font-bold text-xl">
-                  <img className="w-6 mb-4" src={seat} alt="" /> {car.seat}
+                  <img className="w-6 mb-4" src={seat} alt="seat-icon" />
+                  {car.seat}
                 </a>
                 <a className="flex gap-2 text-center font-bold text-xl">
-                  <img className="w-6 mb-4" src={fan} alt="" /> AC
+                  <img className="w-6 mb-4" src={fan} alt="fan-icon" /> AC
                 </a>
               </div>
               <div className="flex flex-col items-center gap-4 lg:flex-row">
