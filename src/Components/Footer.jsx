@@ -137,6 +137,18 @@ const Footer = () => {
                     Disclaimer
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `font-semibold  hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400" : ""
+                      }`
+                    }
+                    to="/faqs"
+                  >
+                    FAQs
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
