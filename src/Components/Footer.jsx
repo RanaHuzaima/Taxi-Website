@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="container px-6 pt-12 mx-auto  bg-gray-100 p-4 mb-2 rounded-lg shadow-[0px_2px_5px_1px_rgba(48,48,48,0.55)] py-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
-              <h1 className="max-w-lg text-xl font-bold text-center md:text-start tracking-tight text-gray-800 xl:text-2xl ">
+              <h1 className="max-w-lg text-xl font-bold text-center md:text-start tracking-tight text-black xl:text-2xl ">
                 Subscribe our newsletter to get update.
               </h1>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                     name="email"
                     required
                     type="text"
-                    className="px-4 py-2 text-gray-700 bg-white border rounded-md w-full mb-3 focus:border-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
+                    className="px-4 py-2 text-black bg-white border rounded-md w-full mb-3 focus:border-yellow-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
                     placeholder="Email Address"
                   />
 
@@ -54,15 +54,13 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center flex-col">
-              <p className=" text-gray-800 text-2xl font-extrabold ">
-                Quick Link
-              </p>
+              <p className=" text-black text-2xl font-extrabold ">Quick Link</p>
               <ul className="flex flex-col items-center mt-5 space-y-2">
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       `font-bold hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl " : ""
+                        isActive ? "text-yellow-400 text-2xl " : ""
                       }`
                     }
                     to="/"
@@ -74,7 +72,7 @@ const Footer = () => {
                   <NavLink
                     className={({ isActive }) =>
                       `font-bold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl" : ""
+                        isActive ? "text-yellow-400 text-2xl" : ""
                       }`
                     }
                     to="/book"
@@ -86,7 +84,7 @@ const Footer = () => {
                   <NavLink
                     className={({ isActive }) =>
                       `font-bold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl" : ""
+                        isActive ? "text-yellow-400 text-2xl" : ""
                       }`
                     }
                     to="/about"
@@ -98,7 +96,7 @@ const Footer = () => {
                   <NavLink
                     className={({ isActive }) =>
                       `font-bold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl" : ""
+                        isActive ? "text-yellow-400 text-2xl" : ""
                       }`
                     }
                     to="/contact"
@@ -109,15 +107,13 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex items-center flex-col">
-              <p className=" text-gray-800 text-2xl font-extrabold ">
-                Other Link
-              </p>
+              <p className=" text-black text-2xl font-extrabold ">Other Link</p>
               <ul className="flex flex-col items-center mt-5 space-y-2">
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-bold hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl" : ""
+                      `font-bold hover:text-yellow-400 rounded-lg ${
+                        isActive ? "text-yellow-400 text-2xl" : ""
                       }`
                     }
                     to="/terms-conditions"
@@ -129,7 +125,7 @@ const Footer = () => {
                   <NavLink
                     className={({ isActive }) =>
                       `font-bold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 text-xl" : ""
+                        isActive ? "text-yellow-400 text-2xl" : ""
                       }`
                     }
                     to="/disclaimer"
@@ -141,7 +137,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr className="my-6 border-gray-200 " />
+          <hr className="my-6 border-gray-300 " />
 
           <div className="flex items-center justify-between">
             <a href="#">
@@ -201,7 +197,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <span className="block text-sm mb-2 text-center">
+          <span className="block text-black text-sm mb-2 text-center">
             © 2023{" "}
             <Link to="/" className="hover:underline cursor-pointer">
               UMRAH TAXI™
