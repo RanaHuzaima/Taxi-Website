@@ -4,6 +4,7 @@ import HeroSection from "../Components/HeroSection";
 import TimelineSection from "../Components/TimelineSection";
 import Team from "../Components/Team";
 import { motion } from "framer-motion";
+import Faqs from "../Components/Faqs";
 
 const About = () => {
   useEffect(() => {
@@ -37,6 +38,7 @@ const About = () => {
       <HeroSection hero_value={info} />
       <TimelineSection />
       <Team />
+      <Faqs />
     </motion.div>
   );
 };

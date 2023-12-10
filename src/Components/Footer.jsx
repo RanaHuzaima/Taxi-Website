@@ -28,10 +28,10 @@ const Footer = () => {
   return (
     <>
       <footer className="container">
-        <div className="container px-6 pt-12 mx-auto bg-gray-300 rounded-lg">
+        <div className="container px-6 pt-12 mx-auto  bg-gray-100 p-4 mb-2 rounded-lg shadow-[0px_2px_5px_1px_rgba(48,48,48,0.55)] py-8">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
-              <h1 className="max-w-lg text-xl font-semibold text-center md:text-start tracking-tight text-gray-800 xl:text-2xl ">
+              <h1 className="max-w-lg text-xl font-bold text-center md:text-start tracking-tight text-gray-800 xl:text-2xl ">
                 Subscribe our newsletter to get update.
               </h1>
 
@@ -61,8 +61,8 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400 " : ""
+                      `font-bold hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl " : ""
                       }`
                     }
                     to="/"
@@ -73,8 +73,8 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl" : ""
                       }`
                     }
                     to="/book"
@@ -85,8 +85,8 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl" : ""
                       }`
                     }
                     to="/about"
@@ -97,8 +97,8 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl" : ""
                       }`
                     }
                     to="/contact"
@@ -116,8 +116,8 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-bold hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl" : ""
                       }`
                     }
                     to="/terms-conditions"
@@ -128,25 +128,13 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
+                      `font-bold  hover:text-yellow-400  rounded-lg ${
+                        isActive ? "text-yellow-400 text-xl" : ""
                       }`
                     }
                     to="/disclaimer"
                   >
                     Disclaimer
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      `font-semibold  hover:text-yellow-400  rounded-lg ${
-                        isActive ? "text-yellow-400" : ""
-                      }`
-                    }
-                    to="/faqs"
-                  >
-                    FAQs
                   </NavLink>
                 </li>
               </ul>

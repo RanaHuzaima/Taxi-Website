@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 
 const Faqs = () => {
@@ -34,45 +33,42 @@ const Faqs = () => {
     },
   ];
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transitionDuration: 1000 }}
-      className=" container"
-    >
-      <div className="bg-white p-4 mb-2 rounded-lg shadow-xl py-8 mt-12">
-        <h1 className="text-4xl font-bold  tracking-widest text-center">
-          FAQs
-        </h1>
-        <p className="text-center text-gray-600 text-sm mt-2">
-          Here are some of the frequently asked questions
-        </p>
-        <div className="space-y-12 px-2 xl:px-16 mt-12">
-          {FaqsData.map((data) => (
-            <div key={data.Question} className="mt-4 flex">
-              <div>
-                <div className="flex items-center h-16 border-l-4 border-yellow-400">
-                  <span className="text-4xl text-yellow-400 px-4">Q.</span>
+    <>
+      <div className=" container">
+        <div className="bg-white mb-3 rounded-lg shadow-xl pb-7">
+          <h1 className="text-4xl font-bold  tracking-widest text-center">
+            FAQs
+          </h1>
+          <p className="text-center text-gray-600 text-sm mt-2">
+            Here are some of the frequently asked questions
+          </p>
+          <div className="space-y-12 px-2 md:px-10 mt-12">
+            {FaqsData.map((data) => (
+              <div key={data.Question} className="mt-4 flex">
+                <div>
+                  <div className="flex items-center h-16 border-l-4 border-yellow-400">
+                    <span className="text-4xl text-yellow-400 px-4">Q.</span>
+                  </div>
+                  <div className="flex items-center h-16 border-l-4 border-black">
+                    <span className="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
                 </div>
-                <div className="flex items-center h-16 border-l-4 border-black">
-                  <span className="text-4xl text-gray-400 px-4">A.</span>
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center h-16">
-                  <span className="text-lg text-yellow-400 font-bold">
-                    {data.Question}
-                  </span>
-                </div>
-                <div className="flex items-center py-2">
-                  <span className="text-gray-500">{data.Answer}</span>
+                <div>
+                  <div className="flex items-center h-16">
+                    <span className="text-lg text-yellow-400 font-bold">
+                      {data.Question}
+                    </span>
+                  </div>
+                  <div className="flex items-center py-2">
+                    <span className="text-gray-500">{data.Answer}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </motion.div>
+    </>
   );
 };
 

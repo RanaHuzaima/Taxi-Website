@@ -13,7 +13,6 @@ import ToyotaHiAcePackages from "../Pages/ToyotaHiAcePackages";
 import H1HyundaiPackages from "../Pages/H1HyundaiPackages";
 import InnovaCarPackages from "../Pages/InnovaCarPackages";
 import { AnimatePresence } from "framer-motion";
-import Faqs from "../Pages/Faqs";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -63,9 +62,6 @@ const AnimatedRoutes = () => {
           </Route>
           <Route path="/Innova-car-packages" element={<InnovaCarPackages />}>
             Innova Car Packages
-          </Route>
-          <Route path="/faqs" element={<Faqs />}>
-            Faqs
           </Route>
         </Routes>
       </AnimatePresence>
