@@ -11,6 +11,7 @@ const Header = () => {
   };
   const closeDropdown = () => {
     setIsOpen(false);
+    setMenuOpen(!menuOpen);
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -232,7 +233,7 @@ const Header = () => {
             >
               Book
             </NavLink>
-            <div className="">
+            <div>
               <a
                 className="text-black font-bold  hover:text-yellow-400 flex items-center cursor-pointer border rounded-lg justify-center"
                 type="button"
