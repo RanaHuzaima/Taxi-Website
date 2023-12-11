@@ -6,7 +6,11 @@ const BookCarList = ({ carData }) => {
   return (
     <>
       {carData.map((car, index) => (
-        <div key={index} className="container flex flex-col mx-auto bg-white">
+        <div
+          key={index}
+          id={car.id}
+          className="container flex flex-col mx-auto bg-white"
+        >
           <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
             <div className="flex flex-col justify-center text-center lg:text-start">
               <h1 className="mb-4 text-2xl font-extrabold leading-tight lg:text-4xl">

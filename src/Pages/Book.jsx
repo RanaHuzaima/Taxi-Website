@@ -21,6 +21,7 @@ const Book = () => {
   }, []);
   const data = [
     {
+      id: "CamryCarId",
       carName: "Camry Car Service",
       seat: "4 Seat",
       imgLink:
@@ -64,6 +65,7 @@ const Book = () => {
       },
     },
     {
+      id: "H1HyundaiId",
       carName: "H1 Hyundai Service",
       seat: "7 Seat",
       imgLink:
@@ -107,6 +109,7 @@ const Book = () => {
       },
     },
     {
+      id: "GmcSuvId",
       carName: "Gmc Suv Service",
       seat: "7 Seat",
       imgLink:
@@ -151,6 +154,7 @@ const Book = () => {
       },
     },
     {
+      id: "HiaceId",
       carName: "Hiace Service",
       seat: "10 Seat",
       imgLink:
@@ -195,6 +199,7 @@ const Book = () => {
       },
     },
     {
+      id: "HyundaiStariaId",
       carName: "Hyundai Staria Service",
       seat: "9 Seat",
       imgLink: "https://i.ibb.co/5GhV8Rp/hyundai-staria.png",
@@ -237,6 +242,7 @@ const Book = () => {
       },
     },
     {
+      id:"InnovaCarId",
       carName: "Innova Car Service",
       seat: "7 Seat",
       imgLink:
