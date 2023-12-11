@@ -5,7 +5,7 @@ const Whatsappicon = () => {
     <>
       <div className="container  flex items-center gap-1">
         <div className="fixed bottom-6 right-6 flex items-center gap-1">
-          <div className="bg-white border rounded-lg shadow shadow-gray-500 px-2 flex items-center group">
+          <div className="bg-white border rounded-lg shadow shadow-gray-500 px-2 items-center group hidden md:flex">
             Click to Book Ride!
           </div>
           <div>
