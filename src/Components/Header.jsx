@@ -18,6 +18,7 @@ const Header = () => {
 
   const handleButtonClick = () => {
     setMenuOpen(!menuOpen);
+    setIsOpen(false);
   };
 
   return (
