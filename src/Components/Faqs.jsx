@@ -34,35 +34,40 @@ const Faqs = () => {
   ];
   return (
     <>
-      <div className=" container">
-        <div className="bg-white mb-3 rounded-lg shadow-xl pb-7">
-          <h1 className="text-4xl font-bold  tracking-widest text-center">
-            FAQs
-          </h1>
-          <p className="text-center text-gray-600 text-sm mt-2">
-            Here are some of the frequently asked questions
-          </p>
-          <div className="space-y-12 px-2 md:px-10 mt-12">
-            {FaqsData.map((data) => (
-              <div key={data.Question} className="mt-4 flex">
-                <div>
-                  <div className="flex items-center h-16 border-l-4 border-yellow-400">
-                    <span className="text-4xl text-yellow-400 px-4">Q.</span>
-                  </div>
-                  <div className="flex items-center h-16 border-l-4 border-black">
-                    <span className="text-4xl text-gray-400 px-4">A.</span>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex items-center h-16">
-                    <span className="text-lg text-yellow-400 font-bold">
-                      {data.Question}
+      <div className="container mb-3">
+        <div className="p-2">
+          <div class="flex flex-col items-center">
+            <h2 class="font-bold text-5xl mt-5 tracking-tight">FAQs</h2>
+            <p class="text-neutral-500 text-xl mt-3">
+              Frequenty asked questions
+            </p>
+          </div>
+          <div class="grid divide-y divide-neutral-200 max-w-4xl mx-auto mt-8">
+            {FaqsData.map((data, index) => (
+              <div key={index} class="py-5">
+                <details class="group">
+                  <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <span className=" text-xl font-bold">{data.Question}</span>
+                    <span class="transition group-open:rotate-180">
+                      <svg
+                        fill="none"
+                        height="24"
+                        shape-rendering="geometricPrecision"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
                     </span>
-                  </div>
-                  <div className="flex items-center py-2">
-                    <span className="text-gray-500">{data.Answer}</span>
-                  </div>
-                </div>
+                  </summary>
+                  <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                    {data.Answer}
+                  </p>
+                </details>
               </div>
             ))}
           </div>

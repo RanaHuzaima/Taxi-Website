@@ -12,7 +12,7 @@ const Header = () => {
   };
   const closeDropdown = () => {
     setMenuOpen(!menuOpen);
-    setIsOpen(!isOpen);
+    setIsOpen(false);
   };
 
   const handleButtonClick = () => {
