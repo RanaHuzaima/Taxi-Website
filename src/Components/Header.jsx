@@ -5,16 +5,15 @@ import CallBtn from "./CallBtn";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
   const closeDropdown = () => {
-    setIsOpen(false);
     setMenuOpen(!menuOpen);
+    setIsOpen(!isOpen);
   };
-
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
     setMenuOpen(!menuOpen);
@@ -215,6 +214,7 @@ const Header = () => {
           >
             {/* Add your NavLink components here */}
             <NavLink
+              onClick={handleButtonClick}
               className={({ isActive }) =>
                 `font-bold  hover:text-yellow-400 border rounded-lg ${
                   isActive ? "text-yellow-400" : ""
@@ -225,6 +225,7 @@ const Header = () => {
               Home
             </NavLink>
             <NavLink
+              onClick={handleButtonClick}
               className={({ isActive }) =>
                 `font-bold  hover:text-yellow-400 border rounded-lg ${
                   isActive ? "text-yellow-400" : ""
@@ -348,6 +349,7 @@ const Header = () => {
               </div>
             </div>
             <NavLink
+              onClick={handleButtonClick}
               className={({ isActive }) =>
                 `font-bold  hover:text-yellow-400 border rounded-lg ${
                   isActive ? "text-yellow-400" : ""
@@ -358,6 +360,7 @@ const Header = () => {
               About
             </NavLink>
             <NavLink
+              onClick={handleButtonClick}
               className={({ isActive }) =>
                 `font-bold  hover:text-yellow-400 border rounded-lg ${
                   isActive ? "text-yellow-400" : ""
