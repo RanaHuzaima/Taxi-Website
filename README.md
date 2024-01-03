@@ -71,4 +71,4 @@ The Taxi App is licensed under the [MIT License](./LICENSE). Feel free to use, m
 
 ## Live
 
-This is deploy on netlify. *Live Link*: https://dapper-griffin-5a24e0.netlify.app
+This is deploy on netlify. **Live Link**: https://dapper-griffin-5a24e0.netlify.app
