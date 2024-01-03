@@ -40,7 +40,7 @@ To install the Taxi App, follow these steps:
 To run the Taxi App locally, use the following command:
 
 ```bash
-npm start
+npm start Dev
 ```
 
 This will start the development server, and you can access the app in your browser at `http://localhost:3000`.
