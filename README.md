@@ -69,6 +69,6 @@ Check the `package.json` file for a complete list.
 
 The Taxi App is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 
-## Live Link
+## Live
 
 This is deploy on netlify. *Live Link*: https://dapper-griffin-5a24e0.netlify.app
