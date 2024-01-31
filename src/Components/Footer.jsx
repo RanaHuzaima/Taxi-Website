@@ -143,7 +143,7 @@ const Footer = () => {
             <a href="#">
               <img
                 className="w-auto h-16 lg:h-28"
-                src="/logo New.png"
+                src="/logo web.png"
                 alt="footer-logo"
               />
             </a>
