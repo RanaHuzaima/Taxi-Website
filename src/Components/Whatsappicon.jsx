@@ -9,7 +9,7 @@ const Whatsappicon = () => {
             Click to Book Ride!
           </div>
           <div>
-            <a href="https://wa.me/923009464666" target="_blank">
+            <a href="https://wa.me/+966597780684" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-12 md:w-16 lg:w-16 group bg-white rounded-full"

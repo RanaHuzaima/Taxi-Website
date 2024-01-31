@@ -4,7 +4,7 @@ const CallBtn = ({ py, px }) => {
   return (
     <>
       <a
-        href="tel:+923009431601"
+        href="tel:+9660565157746"
         className={`flex items-center ${py} text-lg font-medium ${px} text-yellow-400 hover:text-white transition duration-300 rounded-xl border hover:bg-yellow-600`}
       >
         <svg

@@ -28,7 +28,7 @@ const Contact = () => {
     button: false,
     btnText: "Contact Us",
     title: "Contact Us",
-    text: "Greetings from the Umrah taxi service. We are committed to provide the most up-to-date information about umrah taxi services.Our goal is to offer creative and environmentally friendly transportation options that make it easier for Muslims to travel for religious, academic, and cultural purposes. <br> <br> We are a company that values cooperation, respect, excellence, and services.",
+    text: "Greetings from the Al Rehman Tours & Taxi service. We are committed to provide the most up-to-date information about Al Rehman Tours & Taxi services.Our goal is to offer creative and environmentally friendly transportation options that make it easier for Muslims to travel for religious, academic, and cultural purposes. <br> <br> We are a company that values cooperation, respect, excellence, and services.",
     img_link: "https://i.ibb.co/7ncyKGh/Service-24-7-1.gif",
   };
   return (

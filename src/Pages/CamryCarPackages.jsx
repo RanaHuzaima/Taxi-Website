@@ -10,7 +10,7 @@ const CamryCarPackages = () => {
     title: "Camry Car Packages",
     imgLink:
       "https://umrahtaxiservice.com/wp-content/uploads/2022/01/Camry-e1646725296506.png",
-    text: "Discover the unmatched convenience and luxury of our <strong>Umrah Taxi Service</strong> in Makkah.  we’re dedicated to enhancing your pilgrimage experience by offering a range of tailored travel packages to suit your individual preferences and requirements. <br/> <br/> Our Taxi in Makkah is your trusted companion for all your transportation needs during your <strong>Umrah pilgrimage</strong>.",
+    text: "Discover the unmatched convenience and luxury of our <strong>Al Rehman Tours & Taxi Service</strong> in Makkah.  we’re dedicated to enhancing your pilgrimage experience by offering a range of tailored travel packages to suit your individual preferences and requirements. <br/> <br/> Our Taxi in Makkah is your trusted companion for all your transportation needs during your <strong>Umrah pilgrimage</strong>.",
   };
   const packagesData = [
     {

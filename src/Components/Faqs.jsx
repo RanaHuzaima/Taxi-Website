@@ -8,7 +8,7 @@ const Faqs = () => {
         "You will be charged for a ride immediately after the ride is completed, However If you book a ride from airport, you will pay in advance.",
     },
     {
-      Question: "How do I book a ride with Umrah Taxi Service?",
+      Question: "How do I book a ride with Al Rehman Tours & Taxi Service?",
       Answer:
         "You can book a ride with us by filling out our online booking form, calling our customer service hotline, or using our mobile app. We recommend booking in advance to ensure availability and preferred vehicle type.",
     },

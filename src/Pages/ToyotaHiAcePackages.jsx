@@ -10,7 +10,7 @@ const ToyotaHiAcePackages = () => {
     title: "Toyota HiAce Packages",
     imgLink:
       "https://billplz-production.s3.amazonaws.com/uploads/open_collection/photo/135790/retina_d7ea64166da8d918bbae365975b18519-toyota-hiace-for-rent-kl-selangor.png",
-    text: "Experience the ultimate in convenience and comfort with our <strong>Umrah Taxi Service</strong> in Makkah. We’re dedicated to ensuring your pilgrimage journey is as smooth as possible, offering a variety of tailored travel packages to meet your specific needs. <br/> <br/> Our Taxi in Makkah is your trusted partner for all your transportation requirements during your <strong>Umrah pilgrimage</strong>",
+    text: "Experience the ultimate in convenience and comfort with our <strong>Al Rehman Tours & Taxi Service</strong> in Makkah. We’re dedicated to ensuring your pilgrimage journey is as smooth as possible, offering a variety of tailored travel packages to meet your specific needs. <br/> <br/> Our Taxi in Makkah is your trusted partner for all your transportation requirements during your <strong>Umrah pilgrimage</strong>",
   };
   const packagesData = [
     {

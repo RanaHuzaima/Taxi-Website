@@ -9,7 +9,7 @@ const HeroSection = ({ hero_value }) => {
   return (
     <>
       <div className="container flex flex-col mx-auto bg-white">
-        <div className="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div className="grid w-full grid-cols-1 my-auto mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
           <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
             {subtitle && (
               <div className="flex items-center justify-center mb-4 lg:justify-normal">

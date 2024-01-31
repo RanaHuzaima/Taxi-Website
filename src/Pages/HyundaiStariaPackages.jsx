@@ -9,7 +9,7 @@ const HyundaiStariaPackages = () => {
   const Simple_info = {
     title: "Hyundai Staria Packages",
     imgLink: "https://i.ibb.co/5GhV8Rp/hyundai-staria.png",
-    text: "Introducing the ultimate Umrah Taxi experience in Makkah! At Umrah Taxi Service, we are committed to providing you with a top-notch <strong>Umrah Taxi Service</strong> that will enhance your pilgrimage journey.<br/> <br/> Our Taxi in Makkah is your trusted partner for all your transportation needs during your Umrah pilgrimage. We understand the importance of a seamless and comfortable travel experience, which is why we offer a range of travel packages designed to cater to your specific requirements.",
+    text: "Introducing the ultimate Al Rehman Tours & Taxi experience in Makkah! At Al Rehman Tours & Taxi Service, we are committed to providing you with a top-notch <strong>Al Rehman Tours & Taxi Service</strong> that will enhance your pilgrimage journey.<br/> <br/> Our Taxi in Makkah is your trusted partner for all your transportation needs during your Umrah pilgrimage. We understand the importance of a seamless and comfortable travel experience, which is why we offer a range of travel packages designed to cater to your specific requirements.",
   };
   const packagesData = [
     {

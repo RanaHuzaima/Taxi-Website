@@ -23,12 +23,9 @@ const Header = () => {
   return (
     <>
       <div className="container flex flex-col mx-auto">
-        <div className="relative flex flex-wrap  items-center justify-between mb-3 w-full group pt-3 shrink-0">
+        <div className="relative flex flex-wrap  items-center md:justify-around justify-between mb-3 w-full group pt-3 shrink-0">
           <div>
-            <img
-              className="lg:h-20 h-16 cursor-pointer"
-              src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"
-            />
+            <img className="lg:h-36 h-16 cursor-pointer" src="/logo New.png" />
           </div>
           <div className="items-center justify-between hidden sm:text-sm gap-12 text-black md:flex">
             {/* Add your NavLink components here */}

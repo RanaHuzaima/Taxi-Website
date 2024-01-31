@@ -10,7 +10,7 @@ const GmcCarPackages = () => {
     title: "Gmc Suv Packages",
     imgLink:
       "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/43dbea3c-98fc-4dcb-8a97-e97b9c9468dc/431a173e-a21f-48fd-8cff-60b17114e106.png",
-    text: "Experience the epitome of convenience and luxury with our <strong>Umrah Taxi Service</strong> in Makkah. We are devoted to elevating your pilgrimage experience by offering a spectrum of tailored travel packages that cater precisely to your individual preferences and requirements.<br/> <br/> Our Taxi in Makkah is your unwavering companion for all your transportation needs during your sacred <strong>Umrah journey</strong>.",
+    text: "Experience the epitome of convenience and luxury with our <strong>Al Rehman Tours & Taxi Service</strong> in Makkah. We are devoted to elevating your pilgrimage experience by offering a spectrum of tailored travel packages that cater precisely to your individual preferences and requirements.<br/> <br/> Our Taxi in Makkah is your unwavering companion for all your transportation needs during your sacred <strong>Umrah journey</strong>.",
   };
   const packagesData = [
     {

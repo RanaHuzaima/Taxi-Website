@@ -29,14 +29,14 @@ const Home = () => {
     callBtn: true,
     btnText: "Book Now",
     title: "Lets Book Your Umrah Taxi Instantly",
-    text: "Experience seamless and convenient Umrah pilgrimage with our top-notch Umrah Taxi Service. We offer reliable transportation, experienced drivers, and exceptional customer service to ensure a worry-free journey.",
+    text: "Experience seamless and convenient Umrah pilgrimage with our top-notch Al Rehman Tours & Taxi Service. We offer reliable transportation, experienced drivers, and exceptional customer service to ensure a worry-free journey.",
     img_link: "https://i.ibb.co/jGc4tmQ/taxi-img.jpg",
   };
   const Simple_info = {
     title: "Any Group Size, Any Distance.",
     imgLink:
       "https://harmainziarah.com/wp-content/uploads/2023/08/HarmainZiarah-Vehicles.png",
-    text: "Our Umrah Taxi company is first of it’s kind of cab service specializing for in Transport service giving the chance of instant online booking for numerous type of vehicles varying in sizes depending on the number of members in the group. For the best ground transportation experience, let us provide our recognised transport service for your Umrah, family or business trip, parties, airport transfers and corporate travel needs, in Makkah or Madinah.",
+    text: "Our Al Rehman Tours & Taxi company is first of it’s kind of cab service specializing for in Transport service giving the chance of instant online booking for numerous type of vehicles varying in sizes depending on the number of members in the group. For the best ground transportation experience, let us provide our recognised transport service for your Umrah, family or business trip, parties, airport transfers and corporate travel needs, in Makkah or Madinah.",
   };
   return (
     <motion.div

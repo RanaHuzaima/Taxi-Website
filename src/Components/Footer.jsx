@@ -11,7 +11,7 @@ const Footer = () => {
     emailjs
       .sendForm(
         "service_k9fd8tn",
-        "template_74hfv6g",
+        "ate_templ74hfv6g",
         form.current,
         "dys7SFrmJ2i985__K"
       )
@@ -29,8 +29,8 @@ const Footer = () => {
     <>
       <footer className="container">
         <div className="container px-6 pt-12 mx-auto  bg-gray-100 p-4 mb-2 rounded-lg shadow-[0px_2px_5px_1px_rgba(48,48,48,0.55)] py-8">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div className="sm:col-span-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
+            <div className="">
               <h1 className="max-w-lg text-xl font-bold text-center md:text-start tracking-tight text-black xl:text-2xl ">
                 Subscribe our newsletter to get update.
               </h1>
@@ -142,8 +142,8 @@ const Footer = () => {
           <div className="flex items-center justify-between">
             <a href="#">
               <img
-                className="w-auto h-16"
-                src="https://umrah-taxi.com/assets/umrah-taxi1-1c57b6fa08daec5a400f7ce309cda26cff87f87955037c4c0aa0643e031b9a92.png"
+                className="w-auto h-16 lg:h-28"
+                src="/logo New.png"
                 alt="footer-logo"
               />
             </a>
@@ -156,7 +156,7 @@ const Footer = () => {
                 aria-label="Facebook"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-9 h-9 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-9 h-9 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ const Footer = () => {
                 aria-label="Whatsapp"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-9 h-9 fill-current"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -198,9 +198,9 @@ const Footer = () => {
             </div>
           </div>
           <span className="block text-black text-sm mb-2 text-center">
-            © 2023{" "}
+            © 2024{" "}
             <Link to="/" className="hover:underline cursor-pointer">
-              UMRAH TAXI™
+              Al Rehman Tours & Taxi™
             </Link>
             . All Rights Reserved.
           </span>
