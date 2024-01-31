@@ -8,6 +8,7 @@
 4. [Routes](#routes)
 5. [Dependencies](#dependencies)
 6. [License](#license)
+7. [Live Link](#Live)
 
 ## Introduction
 
@@ -40,7 +41,7 @@ To install the Taxi App, follow these steps:
 To run the Taxi App locally, use the following command:
 
 ```bash
-npm start
+npm start dev
 ```
 
 This will start the development server, and you can access the app in your browser at `http://localhost:3000`.
@@ -67,3 +68,7 @@ Check the `package.json` file for a complete list.
 ## License
 
 The Taxi App is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+## Live
+
+This is deploy on netlify. **Live Link**: https://dapper-griffin-5a24e0.netlify.app
