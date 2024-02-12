@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
-
 const ContactForm = () => {
   const form = useRef();
 
@@ -40,21 +39,21 @@ const ContactForm = () => {
           <div className="w-full p-8 my-4 md:px-12 mr-auto">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3 mt-5">
               <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline shadow-lg"
                 type="text"
                 name="from_name"
                 placeholder="Name"
                 required
               />
               <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline shadow-lg"
                 type="email"
                 name="from_email"
                 placeholder="Email"
                 required
               />
               <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline number"
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline number shadow-lg"
                 type="number"
                 name="from_number"
                 placeholder="Phone Number"
@@ -67,7 +66,7 @@ const ContactForm = () => {
                 placeholder="Message"
                 name="message"
                 required
-                className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline shadow-lg"
               ></textarea>
             </div>
             <div className="my-2 flex justify-center items-center">
