@@ -30,17 +30,17 @@ const Team = () => {
               >
                 <div className="relative overflow-hidden px-6">
                   <img
-                    src="https://rb.gy/du8kug"
+                    src="https://i0.wp.com/ctmirror-images.s3.amazonaws.com/wp-content/uploads/2021/01/dummy-man-570x570-1.png?w=570&ssl=1"
                     className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
                   />
                 </div>
                 <div className="pt-6 text-center">
                   <p className="text-lg leading-normal font-bold mb-1">
-                    Zain Ul Abideen
+                    Salman Khaliq
                   </p>
                   <p className="text-gray-500 leading-relaxed font-light">
-                    Founder CEO
+                    Co-Founder
                   </p>
                   <div className="mt-2 mb-5 space-x-2">
                     <a
@@ -143,7 +143,7 @@ const Team = () => {
               >
                 <div className="relative overflow-hidden px-6">
                   <img
-                    src="https://rb.gy/1a047l"
+                    src="https://i0.wp.com/ctmirror-images.s3.amazonaws.com/wp-content/uploads/2021/01/dummy-man-570x570-1.png?w=570&ssl=1"
                     className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
                     loading="lazy"
@@ -151,10 +151,10 @@ const Team = () => {
                 </div>
                 <div className="pt-6 text-center">
                   <p className="text-lg leading-normal font-bold mb-1">
-                    Rana Huzaima Imtiaz
+                    Rehman Malik
                   </p>
                   <p className="text-gray-500 leading-relaxed font-light">
-                    Team Member
+                    Co-Founder
                   </p>
                   <div className="mt-2 mb-5 space-x-2">
                     <a

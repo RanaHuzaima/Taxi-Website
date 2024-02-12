@@ -151,7 +151,7 @@ const Footer = () => {
 
             <div className="flex -mx-2">
               <a
-                href="#"
+                href="https://www.facebook.com/alrehmantoursofficial"
                 target="_blank"
                 className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Facebook"
@@ -167,7 +167,8 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/alrehmantours/"
+                target="_blank"
                 className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Instagram"
               >
@@ -182,7 +183,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://wa.me/+966597780684"
                 target="_blank"
                 className="mx-2 text-gray-600 transition-colors duration-300  hover:text-yellow-400 "
                 aria-label="Whatsapp"
