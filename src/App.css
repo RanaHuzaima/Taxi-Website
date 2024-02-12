@@ -16,3 +16,10 @@
   border-left: 3px solid #edf2f4;
   border-right: 3px solid #edf2f4;
 }
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}

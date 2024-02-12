@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Link, NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Footer = () => {
   const form = useRef();
@@ -10,18 +11,18 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_k9fd8tn",
-        "ate_templ74hfv6g",
+        "service_901hbzf",
+        "template_o2pgg8j",
         form.current,
-        "dys7SFrmJ2i985__K"
+        "AX0Zi8A6oJKlELg9r"
       )
       .then(
         (result) => {
-          alert("Message Sent");
+          toast.success("Email Sent", { autoClose: 1800 });
           e.target.reset();
         },
         (error) => {
-          alert("Message Not Sent");
+          toast.error("Email Not Sent", { autoClose: 1900 });
         }
       );
   };

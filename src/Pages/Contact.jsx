@@ -40,7 +40,7 @@ const Contact = () => {
       <Breadcrumbs page="Contact" link="/contact" />
       <HeroSection hero_value={info} />
       <ContactCta />
-      <GoogleMap />
+      {/* <GoogleMap /> */}
       <ContactForm />
     </motion.div>
   );

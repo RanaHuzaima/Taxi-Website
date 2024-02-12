@@ -1,5 +1,7 @@
-import React from "react";
 import { useRef } from "react";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
+
 
 const ContactForm = () => {
   const form = useRef();
@@ -9,19 +11,19 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_901hbzf",
-        "template_o2pgg8j",
+        "service_1w6owdr",
+        "template_op5qrm3",
         form.current,
-        "dys7SFrmJ2i985__K"
+        "AX0Zi8A6oJKlELg9r"
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alert("Message Sent");
+          toast.success("Message Sent", { autoClose: 1800 });
           e.target.reset();
         },
         (error) => {
           console.log(error.text);
+          toast.error("Message Not Sent", { autoClose: 1900 });
         }
       );
   };
@@ -40,23 +42,24 @@ const ContactForm = () => {
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
-                name="name"
+                name="from_name"
                 placeholder="Name"
                 required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
-                name="email"
+                name="from_email"
                 placeholder="Email"
                 required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline number"
                 type="number"
-                name="phone-number"
+                name="from_number"
                 placeholder="Phone Number"
                 required
+                min="0"
               />
             </div>
             <div className="my-4">

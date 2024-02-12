@@ -5,6 +5,8 @@ import Header from "./Components/Header";
 import Whatsappicon from "./Components/Whatsappicon";
 import Footer from "./Components/Footer";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       <Whatsappicon />
       <AnimatedRoutes />
       <Footer />
+      <ToastContainer />
     </BrowserRouter>
   );
 };

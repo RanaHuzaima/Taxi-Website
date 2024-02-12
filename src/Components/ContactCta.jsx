@@ -29,7 +29,7 @@ const ContactCta = () => {
               Makkah Al-Mukarma Kingdom Saudi Arabia
             </p>
           </div>
-          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
+          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50">
             <span className="p-5 rounded-full bg-yellow-400 text-white shadow-lg shadow-slate-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,16 @@ const ContactCta = () => {
               Contact Number
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              <a href="tel:+966-59-670-4817">+966-59-670-4817</a> <br />
-              <a href="tel:+966-59-670-4817">+966-59-670-6891</a>
+              <a href="tel:+966-56-515-7746" className="hover:underline">
+                +966-56-515-7746
+              </a>{" "}
+              <br />
+              <a href="tel:+966-59-670-4817" className="hover:underline">
+                +966-59-778-0684
+              </a>
             </p>
           </div>
-          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50 cursor-pointer">
+          <div className="p-10 flex flex-col items-center text-center  hover:bg-slate-50">
             <span className="p-5 rounded-full  bg-yellow-400 text-white shadow-lg shadow-slate-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,11 +76,7 @@ const ContactCta = () => {
               Mail Address
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              <a href="mailto:huzaima@gmail.com">
-                booking@UmrahTaxiService.com
-              </a>{" "}
-              <br />
-              <a href="mailto:huzaima@gmail.com">info@UmrahTaxiService.com</a>
+              <a href="mailto:help.alrehmantours@gmail.com" className="hover:underline">help.alrehmantours@gmail.com</a>
             </p>
           </div>
         </div>
